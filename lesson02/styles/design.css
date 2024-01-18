@@ -1,0 +1,73 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+div.banner {
+	padding: 1rem;
+	background-color: #eee;
+	border: 1px solid black;
+}
+
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 300px;
+	grid-gap: 1.5rem;
+}
+
+h2 {
+	color: navy;
+	text-align: left;
+	grid-column: 1 / 3;
+}
+
+section {
+	padding: 1rem;
+}
+
+/* Article */
+/* Reference for nth-of-type: */
+/* https://www.w3schools.com/cssref/sel_nth-of-type.php */
+section:nth-of-type(1) {
+	grid-column: 1 / 2;
+	background: plum;
+}
+
+/* List */
+section:nth-of-type(2) {
+	grid-column: 2 / 3;
+	background: rgb(245, 225, 245);
+}
+
+article p {
+	text-align: justify;
+}
+
+/* References for color contrast ratio: */
+/* https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%23f2f2f2-on-%23521431 */
+/* https://www.google.com/search?q=contrast+ratio+what+is+good+bad+website&sca_esv=599466310&ei=0DapZcygGPzbkPIPmpu6oA4&ved=0ahUKEwjMyJWFlOeDAxX8LUQIHZqNDuQQ4dUDCBA&uact=5&oq=contrast+ratio+what+is+good+bad+website&gs_lp=Egxnd3Mtd2l6LXNlcnAiJ2NvbnRyYXN0IHJhdGlvIHdoYXQgaXMgZ29vZCBiYWQgd2Vic2l0ZTIFECEYoAEyBRAhGJ8FSIsUUKMHWMUScAF4AZABAJgBrAGgAZgJqgEDMC44uAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICBRAhGKsC4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp */
+/* A good contrast ratio is above 4.5 */
+.callout {
+	color: #f2f2f2;
+	background-color: #521431;
+	grid-column: 1 / 3;
+	padding: 1rem;
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: left;
+}
