@@ -1,0 +1,27 @@
+/* References for font-family: */
+/* https://www.w3schools.com/cssref/pr_font_font-family.php */
+/* https://fonts.google.com/ */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid darkgrey;
+    padding: 1rem;
+    background-color: #abe;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}
+
