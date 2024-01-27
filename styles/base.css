@@ -1,3 +1,5 @@
+/* Mobile */
+
 /* Reference for how to make text responsive (text gradually gets smaller as screen size gets smaller): */
 /* https://www.smashingmagazine.com/2016/05/fluid-typography/ */
 html {
@@ -46,6 +48,29 @@ header h1 {
     margin-top: auto;
     margin-bottom: auto;
     font-size: 2em;
+}
+
+/* References on how to create hamburger menu: */
+/* https://byui-cse.github.io/wdd230-course/lesson03/responsive-menu.html */
+/* https://codepen.io/blazzard-jason/pen/gmGxaj/ */
+#menu {
+    display: block;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.navigation li {
+    display: none;
+}
+
+.show li {
+    display: block;
 }
 
 /* Referene on how to remove bullets from a list: */
