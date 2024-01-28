@@ -25,8 +25,7 @@ footer {
 /* https://www.w3schools.com/cssref/pr_grid-column-gap.php#:~:text=Definition%20and%20Usage,to%20column%2Dgap%20in%20CSS3. */
 header {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 2.5fr;
+    grid-template-columns: 1fr 2.5fr 0.5fr;
     background: #1d4152;
     padding: 1.3rem;
 }
@@ -36,33 +35,69 @@ header {
 header img {
     width: 12vh;
     height: auto;
-    grid-row: 1 / 2;
     grid-column: 1 / 2;
 }
 
 header h1 {
-    grid-row: 1 / 2;
     grid-column: 2 / 3;
     color: white;
     /* helps vertically center h1 tag */
     margin-top: auto;
     margin-bottom: auto;
     font-size: 2em;
+    text-align: center;
 }
 
 /* References on how to create hamburger menu: */
 /* https://byui-cse.github.io/wdd230-course/lesson03/responsive-menu.html */
 /* https://codepen.io/blazzard-jason/pen/gmGxaj/ */
+/* Reference for how to position before pseudo-element: */
+/* https://stackoverflow.com/questions/23566624/before-pseudo-element-without-moving-actual-content */
 #menu {
-    display: block;
+    position: relative;
+    grid-column: 3 / 4;
+    /* Reference for removing underline from link: */
+    /* https://blog.hubspot.com/website/remove-underline-from-links-css */
+    text-decoration: none;
+    text-align: center;
+    font-size: 70px;
+    /* Reference for font-weight: */
+    /* https://www.w3schools.com/cssref/pr_font_weight.php */
+    font-weight: bold;
+    color: #fff;
 }
 
 #menu::before {
+    position: absolute;
+    top: -28px;
+    right: 5px;
     content: "≡";
 }
 
+/* Reference for how to get windows emoji: */
+/* https://byui-cse.github.io/wdd230-course/lesson03/aa-course-homepage-03.html */
+/* Windows key plus . */
+/* Reference for how to position pseudo element content: */
+/* https://stackoverflow.com/questions/23566624/before-pseudo-element-without-moving-actual-content */
+
+.active {
+    position: relative;
+}
+
+.active::before {
+    content: "🟡";
+    position: absolute;
+    left: 17%;
+}
+
+/* Reference for closing X checkbox: 2612 */
+/* https://www.compart.com/en/unicode/U+2612 */
 #menu.show::before {
-    content: "X";
+    position: absolute;
+    top: -10px;
+    right: 4px;
+    content: "\2612";
+    font-size: 50px;
 }
 
 .navigation li {
@@ -141,6 +176,10 @@ nav ul li:nth-of-type(5) {
     grid-column: 1 / 2;
 }
 
+main {
+    display: grid;
+}
+
 main h2,
 section {
     margin: 0 1rem;
@@ -188,8 +227,6 @@ section.card ol li {
 
 /* Learning Activities Card */
 section.card:nth-of-type(1) {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
     margin-top: 30px;
 }
 
@@ -209,13 +246,20 @@ section.card ol li a {
 
 /* Information Card */
 section.card:nth-of-type(2) {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
     margin-top: 10px;
 }
 
 section.card p {
     text-align: center;
+}
+
+/* Google Map of Bountiful */
+iframe {
+    width: 93%;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
