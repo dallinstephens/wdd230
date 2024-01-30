@@ -1,0 +1,113 @@
+/* References for font-family: */
+/* https://www.w3schools.com/cssref/pr_font_font-family.php */
+/* https://fonts.google.com/ */
+main {
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main h2 {
+    color: #ffffff;
+    background-color: #1d1a1a;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+h3,
+h2 {
+    font-family: Lora, serif;
+}
+
+section.card {
+    grid-column: 1 / 2;
+    margin-top: 10px;
+}
+
+/* Site Name, Site Purpose, Scenerios*/
+section.card:nth-of-type(1),
+section.card:nth-of-type(2),
+section.card:nth-of-type(3) {
+    background-color: #c0504c;
+    color: #ffffff;
+}
+
+section.card:nth-of-type(1) p,
+section.card:nth-of-type(2) p {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section.card:nth-of-type(1) p,
+section.card:nth-of-type(2) p,
+section.card:nth-of-type(3) ul li {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+section.card h3 {
+    background-color: #A50000;
+}
+
+/* Color Schema */
+/* References for square symbols: */
+/* https://www.compart.com/en/unicode/U+25A0 */
+/* https://www.compart.com/en/unicode/U+25A1#:~:text=%E2%80%9C%E2%96%A1%E2%80%9D%20U%2B25A1%20White%20Square%20Unicode%20Character */
+section.card:nth-of-type(4) ol li::before {
+    content: "\25A0";
+    font-size: 40px;
+}
+
+/* References used to pick site colors: */
+/* https://coolors.co/a50000-99f7ab-abdf75-1d1a1a-c5d6d8 */
+/* https://www.w3schools.com/colors/colors_picker.asp */
+
+section.card:nth-of-type(4) ol li:nth-child(1):before {
+    color: #a50000;
+}
+
+section.card:nth-of-type(4) ol li:nth-child(2):before {
+    color: #1d1a1a;
+}
+
+section.card:nth-of-type(4) ol li:nth-child(3):before {
+    content: "\25A1";
+}
+
+section.card:nth-of-type(4) ol li:nth-child(4):before {
+    color: #c0504c;
+}
+
+section.card:nth-of-type(4) ol li:nth-child(5):before {
+    color: #5e5555;
+}
+
+/* Typography */
+section.card:nth-of-type(5) ol li:nth-child(1) {
+    font-family: Lora, serif;
+}
+
+section.card:nth-of-type(5) ol li:nth-child(2) {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Wireframe */
+section.card h4 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #FFCCCC;
+}
+
+/* Reference for how to center an image: */
+/* https://www.w3schools.com/howto/howto_css_image_center.asp */
+img.wireframe {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
