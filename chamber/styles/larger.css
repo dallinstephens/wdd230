@@ -1,0 +1,10 @@
+@media (min-width: 1000px) {
+    html {
+        margin: 0 200px;
+        background-color: var(--light-grey);
+    }
+
+    body {
+        background-color: var(--white);
+    }
+}

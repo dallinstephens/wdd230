@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Reference for how to use root colors: */
+/* https://byui-cse.github.io/wdd230-course/lesson04/pseudo-classes.html */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+:root {
+    --dark-red: #a50000;
+    --dark-grey: #1d1a1a;
+    --light-grey: #5e5555;
+    --black: #000000;
+    --white: #ffffff;
+    --light-red: #ff6666;
+    --lara: 'Lara', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+h1,
+h2,
+button {
+    font-family: 'Lara', serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: var(--dark-grey);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    color: var(--white);
+    text-align: center;
+}
+
+/* Reference for styling images to get a circle image: */
+/* https://www.w3schools.com/css/css3_images.asp */
+header img {
+    border-radius: 100%;
+    width: 50%;
+    height: auto;
+    border: 5px solid var(--dark-red);
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+header h1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 100%;
+    font-size: 7vw;
+    justify-self: center;
+    align-self: center;
+}
+
+header p {
+    font-size: 3vw;
+    line-height: 2rem;
+}
+
+header p:nth-of-type(1) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+header p:nth-of-type(2) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+#menuHeader {
+    position: relative;
+    background-color: var(--dark-red);
+    width: 100%;
+    height: 70px;
+    margin: 0;
+}
+
+#menuHeader a {
+    /* Reference for removing underline from link: */
+    /* https://blog.hubspot.com/website/remove-underline-from-links-css */
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Reference for symbol: */
+/* https://www.toptal.com/designers/htmlarrows/symbols/ */
+/* Hamburger symbol */
+#menuHeader a::before {
+    position: absolute;
+    left: 15px;
+    content: "\02630";
+    font-size: 50px;
+}
+
+/* Reference for closing X checkbox: 2612 */
+/* https://www.compart.com/en/unicode/U+2612 */
+#menuHeader a.show::before {
+    content: "\2612";
+    font-size: 50px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.show li {
+    display: block;
+}
+
+#menuHeader button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--dark-red);
+    font-size: 25px;
+    border: 5px solid var(--dark-grey);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    border: 10px solid var(--dark-grey);
+}
+
+nav ul li {
+    border: 2px solid var(--dark-grey);
+    text-align: center;
+    background-color: var(--dark-grey);
+    padding: 10px;
+}
+
+nav ul li:hover {
+    border: 2px solid var(--white);
+    background-color: var(--light-grey);
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Section 1 */
+main #section1 img {
+    width: 100%;
+}
+
+main #section1 div {
+    position: relative;
+    top: -5px;
+    background-color: var(--dark-red);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main #section1 div a {
+    font-family: var(--lara);
+    text-decoration: none;
+    /* Reference for how to vertically center a tag: */
+    /* https://stackoverflow.com/questions/15393352/vertically-center-a-tag */
+    line-height: 50px;
+    font-size: 30px;
+    color: var(--white);
+}
+
+main #section1 h2 {
+    text-align: center;
+}
+
+main #section1 p {
+    padding: 0 20px;
+    line-height: 30px;
+}
+
+/* Section 2 */
+/* Arts museum image */
+main #section2 img {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Events soon to come */
+main #section2 div {
+    display: grid;
+    background-color: var(--dark-grey);
+    padding: 10px;
+}
+
+main #section2 div h3 {
+    color: var(--white);
+    font-weight: bold;
+    font-family: var(--lara);
+    margin: 0;
+    padding-bottom: 10px;
+    justify-self: center;
+}
+
+main #section2 div button {
+    padding: 5px;
+    font-size: 15px;
+    background-color: var(--dark-red);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+/* Section 3 */
+main #section3 .circle {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-align: center;
+    margin: 100px auto;
+    /* Reference for border styling: */
+    /* https://www.w3schools.com/cssref/pr_border-style.php */
+    border: 10px double var(--white);
+}
+
+/* Reference for how to horizontally center an absolute element: */
+/* https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/ */
+main #section3 .circle span:nth-of-type(1) {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    font-size: 60px;
+}
+
+main #section3 .circle span:nth-of-type(2) {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+}
+
+/* Section 4 */
+/* Learn more about the team button */
+main #section4 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+main #section4 button {
+    border: 5px solid var(--dark-red);
+    color: var(--black);
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main #section4 img {
+    width: 100%;
+}
+
+/* Section 5 */
+/* Weather */
+main #section5 {
+    margin-bottom: 100px;
+}
+
+main #section5 h3 {
+    font-family: var(--lara);
+    background-color: var(--dark-red);
+    color: var(--white);
+    border: 5px solid var(--dark-grey);
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    /* Reference for how to vertically align text: */
+    /* https://stackoverflow.com/questions/8865458/how-do-i-vertically-center-text-with-css */
+    line-height: 70px;
+    margin: 0;
+}
+
+main #section5 h4 {
+    background-color: var(--dark-red);
+    color: var(--white);
+    border-left: 5px solid var(--dark-grey);
+    border-right: 5px solid var(--dark-grey);
+    border-bottom: 5px solid var(--dark-grey);
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+main #section5 h4 a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+main #section5 h4:hover {
+    background-color: var(--dark-grey);
+}
+
+footer {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
