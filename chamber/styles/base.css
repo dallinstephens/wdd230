@@ -12,7 +12,7 @@
     --black: #000000;
     --white: #ffffff;
     --light-red: #ff6666;
-    --lara: 'Lara', serif;
+    --lora: 'Lora', serif;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 h1,
 h2,
 button {
-    font-family: 'Lara', serif;
+    font-family: 'Lora', serif;
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
@@ -174,7 +174,7 @@ main #section1 div {
 }
 
 main #section1 div a {
-    font-family: var(--lara);
+    font-family: var(--lora);
     text-decoration: none;
     /* Reference for how to vertically center a tag: */
     /* https://stackoverflow.com/questions/15393352/vertically-center-a-tag */
@@ -210,7 +210,7 @@ main #section2 div {
 main #section2 div h3 {
     color: var(--white);
     font-weight: bold;
-    font-family: var(--lara);
+    font-family: var(--lora);
     margin: 0;
     padding-bottom: 10px;
     justify-self: center;
@@ -284,7 +284,7 @@ main #section5 {
 }
 
 main #section5 h3 {
-    font-family: var(--lara);
+    font-family: var(--lora);
     background-color: var(--dark-red);
     color: var(--white);
     border: 5px solid var(--dark-grey);
