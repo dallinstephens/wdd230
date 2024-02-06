@@ -93,6 +93,7 @@ header p:nth-of-type(2) {
     /* https://blog.hubspot.com/website/remove-underline-from-links-css */
     text-decoration: none;
     color: var(--white);
+    line-height: 70px;
 }
 
 /* Reference for symbol: */
@@ -134,7 +135,6 @@ header p:nth-of-type(2) {
 nav ul {
     padding: 0;
     margin: 0;
-    border: 10px solid var(--dark-grey);
 }
 
 nav ul li {

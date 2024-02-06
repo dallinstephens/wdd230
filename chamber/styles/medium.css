@@ -53,6 +53,7 @@
 
     nav ul.navigation li {
         display: block;
+        border: 10px solid var(--dark-grey);
     }
 
     /* References for using flex for horizontal navigation bar: */
