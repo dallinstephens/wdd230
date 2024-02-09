@@ -11,7 +11,8 @@ button.addEventListener('click', () => {
         li.append(deleteButton);
         list.append(li);
         deleteButton.addEventListener('click', function() {
-            list.removeChild(li)
+            list.removeChild(li);
+            input.focus();
         });
         input.value = '';
         input.focus();
