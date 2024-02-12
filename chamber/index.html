@@ -67,34 +67,35 @@
     <!-- https://codepen.io/blazzard-jason/pen/gmGxaj/ -->
     <div id="menuHeader">
         <a id="menu"></a>
-        <button>BECOME A MEMBER</button>
+        <!-- Reference on how to create a toggle switch: -->
+        <!-- https://www.w3schools.com/howto/howto_css_switch.asp -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
     </div>
 
     <nav>
         <ul class="navigation">
-            <li><a href="" class="active">About Us</a></li>
+            <li><a href="" class="active">About</a></li>
             <li><a href="">Team</a></li>
             <li><a href="">News</a></li>
             <li><a href="">Weather</a></li>
             <li><a href="">Resources</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
     </nav>
 
     <main>
         <!-- Section 1 -->
+        <h2>The Bountiful Chamber of Commerce</h2>
         <div id="section1">
             <!-- Bountiful City Image Attribution: https://www.flickr.com/photos/edgarzuniga/3835702113 -->
             <img src="images/bountiful-city.jpg" alt="Bountiful City">
-            <!-- Reference for calendar symbol: -->
-            <!-- https://www.compart.com/en/unicode/U+1F4C5 -->
-            <div><a href=""><span>&#128197; </span><span>Events Calendar</span></a></div>
-
-            <h2>The Bountiful Chamber of Commerce</h2>
+            <span><button>BECOME A MEMBER</button></span>
             <p>The Bountiful Chamber of Commerce helps provide networking for small businesses, helps create jobs for
                 families and individuals, provides local news and the weather, and informs about local events in the
-                area.
-            </p>
+                area.</p>
         </div>
 
         <!-- Section 2 -->
@@ -103,7 +104,9 @@
             <img src="images/art-museum.jpg" alt="Art museum">
             <div>
                 <h3>Events Soon to Come</h3>
-                <button>View Calendar</button>
+                <!-- Reference for calendar symbol: -->
+                <!-- https://www.compart.com/en/unicode/U+1F4C5 -->
+                <button><span>&#128197; </span>View Calendar</button>
             </div>
         </div>
 
@@ -128,11 +131,40 @@
             <button>Learn more about the team</button>
             <!-- Attribution for image: https://unsplash.com/photos/people-sitting-on-chair-in-front-of-laptop-computers-rMILC1PIwM0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
             <img src="images/team.jpg" alt="Team">
+
+            <h2>Member Spotlights</h2>
+            <div class="spotlight">
+                <h3>Community Service Day</h3>
+                <p>
+                    Thank you for all that helped out!<br>
+                    community@serviceday.com<br>
+                    801-111-1111<br>
+                    Website
+                </p>
+            </div>
+            <div class="spotlight">
+                <h3>Networking Groups</h3>
+                <p>
+                    Build networking with like-minded individuals!<br>
+                    build@networking.com<br>
+                    801-222-2222<br>
+                    Website
+                </p>
+            </div>
+            <div class="spotlight">
+                <h3>After School Tutoring</h3>
+                <p>
+                    Thank you volunteering to tutor our children!<br>
+                    education@afterschooltutoring.com<br>
+                    801-333-3333<br>
+                    Website
+                </p>
+            </div>
         </div>
 
         <!-- Section 5 -->
         <div id="section5">
-            <h3>Bountiful Weather Forecast</h3>
+            <h3>Weather</h3>
             <h4><a href="">&#9788; Monday</a></h4>
             <h4><a href="">&#9729; Tuesday</a></h4>
             <h4><a href="">&#9730; Wednesday</a></h4>
@@ -164,6 +196,7 @@
     </footer>
     <script src="scripts/toggle-menu.js"></script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/toggle-switch.js"></script>
 </body>
 
 </html>

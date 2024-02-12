@@ -8,7 +8,7 @@
 :root {
     --dark-red: #a50000;
     --dark-grey: #1d1a1a;
-    --light-grey: #5e5555;
+    --light-grey: #ccc;
     --black: #000000;
     --white: #ffffff;
     --light-red: #ff6666;
@@ -47,7 +47,7 @@ header {
 /* https://www.w3schools.com/css/css3_images.asp */
 header img {
     border-radius: 100%;
-    width: 50%;
+    width: 100%;
     height: auto;
     border: 5px solid var(--dark-red);
     grid-row: 1 / 2;
@@ -66,7 +66,7 @@ header h1 {
 }
 
 header p {
-    font-size: 3vw;
+    font-size: 3.2vw;
     line-height: 2rem;
 }
 
@@ -93,7 +93,7 @@ header p:nth-of-type(2) {
     /* https://blog.hubspot.com/website/remove-underline-from-links-css */
     text-decoration: none;
     color: var(--white);
-    line-height: 70px;
+    line-height: 67px;
 }
 
 /* Reference for symbol: */
@@ -113,23 +113,78 @@ header p:nth-of-type(2) {
     font-size: 50px;
 }
 
+/* Reference how to create a toggle switch: */
+/* https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+    position: absolute;
+    display: inline-block;
+    top: 18px;
+    right: 15px;
+    width: 60px;
+    height: 34px;
+    /* positions moon/sun symbol */
+    line-height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-grey);
+    outline: 3px solid var(--white);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: attr(content-before);
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--white);
+    font-size: 18px;
+    text-align: center;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--white);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    border: 1px solid var(--black);
+}
+
 .navigation li {
     display: none;
 }
 
 .show li {
     display: block;
-}
-
-#menuHeader button {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    border-radius: 5px;
-    background-color: var(--white);
-    color: var(--dark-red);
-    font-size: 25px;
-    border: 5px solid var(--dark-grey);
 }
 
 nav ul {
@@ -157,34 +212,43 @@ nav ul li a {
     font-size: 20px;
 }
 
+main {
+    padding-bottom: 100px;
+}
+
 /* Section 1 */
+main h2:nth-of-type(1) {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 15px;
+}
+
 main #section1 img {
     width: 100%;
 }
 
-main #section1 div {
+main #section1 span {
+    display: block;
     position: relative;
-    top: -5px;
+    top: -4px;
     background-color: var(--dark-red);
     width: 100%;
-    height: 50px;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-main #section1 div a {
-    font-family: var(--lora);
-    text-decoration: none;
     /* Reference for how to vertically center a tag: */
     /* https://stackoverflow.com/questions/15393352/vertically-center-a-tag */
-    line-height: 50px;
-    font-size: 30px;
-    color: var(--white);
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
 }
 
-main #section1 h2 {
-    text-align: center;
+main #section1 button {
+    font-family: var(--lora);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px double var(--dark-red);
 }
 
 main #section1 p {
@@ -222,6 +286,7 @@ main #section2 div button {
     background-color: var(--dark-red);
     color: var(--white);
     border-radius: 5px;
+    outline: 2px solid var(--white);
 }
 
 /* Section 3 */
@@ -277,12 +342,39 @@ main #section4 img {
     width: 100%;
 }
 
-/* Section 5 */
-/* Weather */
-main #section5 {
-    margin-bottom: 100px;
+main #section4 h2 {
+    margin-top: 100px;
 }
 
+main #section4 .spotlight h3 {
+    width: 95%;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--dark-red);
+    color: var(--white);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+main #section4 .spotlight p {
+    width: 95%;
+    height: 150px;
+    line-height: 25px;
+    background-color: var(--light-grey);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Section 5 */
+/* Weather */
 main #section5 h3 {
     font-family: var(--lora);
     background-color: var(--dark-red);

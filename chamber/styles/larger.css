@@ -7,4 +7,15 @@
     body {
         background-color: var(--white);
     }
+
+    main #section1 {
+        margin-bottom: 100px;
+    }
+
+}
+
+@media (min-width: 1290px) {
+    main #section1 {
+        margin-bottom: 350px;
+    }
 }
