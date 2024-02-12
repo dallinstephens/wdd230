@@ -207,6 +207,10 @@
         align-self: center;
     }
 
+    main #section4 .spotlight {
+        margin: 0;
+    }
+
     main #section4 .spotlight:nth-of-type(1) {
         grid-row: 3 / 4;
         grid-column: 1 / 3;
