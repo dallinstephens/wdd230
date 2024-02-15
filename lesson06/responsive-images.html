@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Images</title>
+    <meta name="description" content="Responsive images for different sized screens">
+    <meta name="author" content="Dallin Stephens">
+    <meta property="og:title" content="Responsive Images">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:image" content="Image url"> -->
+    <meta property="og:url" content="https://dallinstephens.github.io/wdd230/lesson06/responsive-images.html">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Images</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Bountiful Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>
