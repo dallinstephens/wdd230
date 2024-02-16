@@ -16,6 +16,7 @@ body {
 
 header,
 nav,
+.hero,
 main,
 footer {
     margin: 0 auto;
@@ -174,6 +175,47 @@ nav ul li:nth-of-type(4) {
 nav ul li:nth-of-type(5) {
     grid-row: 5 / 6;
     grid-column: 1 / 2;
+}
+
+/* Bountiful Temple Image */
+.hero {
+    /* This centers the image */
+    text-align: center;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Reference for overlaying label: */
+/* https://codepen.io/blazzard-jason/pen/NWMeOQE */
+/* Reference for how to set opacity to only background color not text: */
+/* https://www.geeksforgeeks.org/set-the-opacity-only-to-background-color-not-on-the-text-in-css/ */
+/* References for radial-gradient: */
+/* https://codepen.io/blazzard-jason/pen/NWMeOQE */
+/* https://www.w3schools.com/css/css3_gradients_radial.asp */
+/* Reference for color picker: */
+/* https://www.w3schools.com/colors/colors_picker.asp */
+.heroLabel {
+    position: absolute;
+    top: 10vw;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 1px solid #000;
+    /* opacity is done with rgba with 0.75 as the opacity */
+    background: radial-gradient(rgb(255, 255, 255, 0.7), rgba(29, 65, 82, 0.2));
+    box-shadow: 0 0 3rem #fff;
+    padding: 2px;
+}
+
+.heroLabel p {
+    font-size: 6vw;
+    font-weight: bold;
 }
 
 main {

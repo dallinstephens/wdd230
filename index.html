@@ -49,7 +49,7 @@
 
 <body>
     <header>
-        <img src="images/dallin-stephens.jpg" alt="profile image of Dallin Stephens">
+        <img src="images/dallin-stephens.webp" alt="profile image of Dallin Stephens">
         <h1>Dallin Stephens</h1>
         <!-- References on how to create hamburger menu: -->
         <!-- https://byui-cse.github.io/wdd230-course/lesson03/responsive-menu.html -->
@@ -71,6 +71,22 @@
                     target="_blank">Scripture</a></li>
         </ul>
     </nav>
+    <!-- References for picture tag and responsive images: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson06/aa-course-homepage-06.html -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson06/responsive-images.html -->
+    <div class="hero">
+        <!-- References for source of Bountiful Temple images: -->
+        <!-- https://www.churchofjesuschrist.org/temples/photo-gallery/bountiful-utah-temple?lang=eng -->
+        <!-- https://www.churchofjesuschrist.org/temples/list?lang=eng -->
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+            <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-large.webp" alt="Bountiful Temple" width="1043" height="652">
+        </picture>
+        <div class="heroLabel">
+            <p>Bountiful Utah Temple</p>
+        </div>
+    </div>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
@@ -103,12 +119,14 @@
                         Combinators Screenshot
                     </a>
                     |
-                    <a href="https://codepen.io/DallinS/pen/QWoqErG" target="_blank">CSS Pseudo-elements (CodePen)</a>
+                    <a href="https://codepen.io/DallinS/pen/QWoqErG" target="_blank">CSS Pseudo-elements
+                        (CodePen)</a>
                     |
                     <a href="https://codepen.io/DallinS/pen/QWoOPKd" target="_blank">Responsive Hamburger Menu
                         (CodePen)</a>
                 </li>
-                <li><a href="https://codepen.io/DallinS/pen/wvOyjow" target="_blank">CSS Pseudo-classes (CodePen)</a>
+                <li><a href="https://codepen.io/DallinS/pen/wvOyjow" target="_blank">CSS Pseudo-classes
+                        (CodePen)</a>
                 </li>
                 <li><a href="https://dallinstephens.github.io/wdd230/lesson05/bom.html" target="_blank">BOM
                         Application</a></li>
