@@ -215,6 +215,7 @@ main h2:nth-of-type(1) {
 
 main #section1 img {
     width: 100%;
+    height: auto;
 }
 
 main #section1 span {
@@ -368,27 +369,39 @@ main #section4 .spotlight p {
 
 /* Section 5 */
 /* Weather */
-main #section5 h3 {
-    font-family: var(--lora);
+main #section5 {
     background-color: var(--dark-red);
     color: var(--white);
     border: 5px solid var(--dark-grey);
+    margin: 0 20px;
+}
+
+/* Reference for how to make underline longer than headline: */
+/* https://stackoverflow.com/questions/7294369/how-can-i-make-an-underline-some-pixels-longer-than-the-headline */
+main #section5 h3 {
+    font-family: var(--lora);
+    border-bottom: 1px solid var(--white);
     font-size: 30px;
     text-align: center;
+    margin: 5px 40px;
+}
+
+main #section5 div {
+    font-size: 23px;
+    text-align: center;
     width: 100%;
-    height: 80px;
-    /* Reference for how to vertically align text: */
-    /* https://stackoverflow.com/questions/8865458/how-do-i-vertically-center-text-with-css */
-    line-height: 70px;
-    margin: 0;
+    height: auto;
+    line-height: 40px;
+}
+
+main #section5 div>span {
+    display: block;
 }
 
 main #section5 h4 {
     background-color: var(--dark-red);
     color: var(--white);
-    border-left: 5px solid var(--dark-grey);
-    border-right: 5px solid var(--dark-grey);
-    border-bottom: 5px solid var(--dark-grey);
+    border-top: 5px solid var(--dark-grey);
     font-weight: bold;
     font-size: 18px;
     width: 100%;

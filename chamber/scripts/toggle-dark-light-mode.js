@@ -21,6 +21,7 @@ const section4Button = document.querySelector('#section4 button');
 const spotlightH3 = document.querySelectorAll('.spotlight h3');
 const spotlightParagraphs = document.querySelectorAll('.spotlight p');
 const weatherSection = document.querySelector('#section5');
+const weatherSectionH4 = document.querySelectorAll('main div#section5 h4');
 const footer = document.querySelector('footer');
 const html = document.querySelector('html');
 
@@ -54,6 +55,10 @@ sliderElem.addEventListener('click', function (event) {
             spotlightParagraphs[i].style.outline = '1px solid var(--white)';
         }
         weatherSection.style.backgroundColor = 'var(--black)';
+        weatherSection.style.borderColor = 'var(--white)';
+        for (let i = 0; i < weatherSectionH4.length; i++) {
+            weatherSectionH4[i].style.borderColor = 'var(--white)';
+        } 
         footer.style.backgroundColor = 'var(--black)';
         html.style.backgroundColor = 'var(--dark-grey)';
     }
@@ -82,7 +87,11 @@ sliderElem.addEventListener('click', function (event) {
             spotlightParagraphs[i].style.color = 'var(--black)';
             spotlightParagraphs[i].style.outline = 'none';
         }
-        weatherSection.style.backgroundColor = 'var(--white)';
+        weatherSection.style.backgroundColor = 'var(--dark-red)';
+        weatherSection.style.borderColor = 'var(--dark-grey)';
+        for (let i = 0; i < weatherSectionH4.length; i++) {
+            weatherSectionH4[i].style.borderColor = 'var(--dark-grey)';
+        } 
         footer.style.backgroundColor = 'var(--dark-grey)';
         html.style.backgroundColor = 'var(--light-grey)';   
     }    

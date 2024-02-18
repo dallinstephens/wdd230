@@ -46,7 +46,7 @@
 
 <body>
     <header>
-        <img src="images/bountiful-chamber-logo.jpg" alt="Bountiful Chamber of Commerce Logo">
+        <img src="images/bountiful-chamber-logo.webp" alt="Bountiful Chamber of Commerce Logo">
         <h1>Bountiful<br>Chamber of Commerce</h1>
         <!-- Reference for contact information (Bountiful Library): -->
         <!-- https://library.utah.gov/directory/listing/south-branch-library-bountiful/ -->
@@ -91,7 +91,16 @@
         <h2>The Bountiful Chamber of Commerce</h2>
         <div id="section1">
             <!-- Bountiful City Image Attribution: https://www.flickr.com/photos/edgarzuniga/3835702113 -->
-            <img src="images/bountiful-city.jpg" alt="Bountiful City">
+            <!-- <img src="images/bountiful-city.jpg" alt="Bountiful City"> -->
+            <!-- References for image: -->
+            <!-- https://byui-cse.github.io/wdd230-course/lesson06/aa-chamber-home-06.html -->
+            <!-- https://byui-cse.github.io/wdd230-course/images/l06/wdd230-org.jpg -->
+            <picture>
+                <source style="width: 100vw" media="(max-width: 639px)" srcset="images/hero-small.webp" width="652"
+                    height="642">
+                <source media="(max-width: 999px)" srcset="images/hero-medium.webp" width="1015" height="869">
+                <img src="images/hero-large.webp" alt="Individuals meeting" width="1286" height="857">
+            </picture>
             <span><button>BECOME A MEMBER</button></span>
             <p>The Bountiful Chamber of Commerce helps provide networking for small businesses, helps create jobs for
                 families and individuals, provides local news and the weather, and informs about local events in the
@@ -101,7 +110,7 @@
         <!-- Section 2 -->
         <div id="section2">
             <!-- Art museum image attribution: https://unsplash.com/photos/assorted-picture-frames-on-wall-acowe0pCVBg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
-            <img src="images/art-museum.jpg" alt="Art museum">
+            <img src="images/art-museum.webp" alt="Art museum">
             <div>
                 <h3>Events Soon to Come</h3>
                 <!-- Reference for calendar symbol: -->
@@ -130,7 +139,7 @@
         <div id="section4">
             <button>Learn more about the team</button>
             <!-- Attribution for image: https://unsplash.com/photos/people-sitting-on-chair-in-front-of-laptop-computers-rMILC1PIwM0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
-            <img src="images/team.jpg" alt="Team">
+            <img src="images/team.webp" alt="Team">
 
             <h2>Member Spotlights</h2>
             <div class="spotlight">
@@ -164,14 +173,23 @@
 
         <!-- Section 5 -->
         <div id="section5">
-            <h3>Weather</h3>
-            <h4><a href="">&#9788; Monday</a></h4>
-            <h4><a href="">&#9729; Tuesday</a></h4>
-            <h4><a href="">&#9730; Wednesday</a></h4>
-            <h4><a href="">&#9730; Thursday</a></h4>
-            <h4><a href="">&#9784; Friday</a></h4>
-            <h4><a href="">&#9788; Saturday</a></h4>
-            <h4><a href="">&#9729; Sunday</a></h4>
+            <h3>Weather
+            </h3>
+            <div>
+                <span id="temperatureContainer"><span id="temperature">0</span>&deg;F</span>
+                <!-- Reference for weather symbols: -->
+                <!-- https://www.alt-codes.net/weather-symbols.php -->
+                <span id="weatherConditionContainer"><span id="weatherCondition">&#x26C5;Partly Cloudy</span></span>
+                <span id="windSpeedContainer">Wind Speed: <span id="windSpeed">25</span> mph</span>
+                <span id="windChillContainer">Wind Chill: <span id="windChill"></span>&deg;F</span>
+            </div>
+            <h4><a href="">&#9788; Mon</a></h4>
+            <h4><a href="">&#9729; Tue</a></h4>
+            <h4><a href="">&#9730; Wed</a></h4>
+            <h4><a href="">&#9730; Thu</a></h4>
+            <h4><a href="">&#9784; Fri</a></h4>
+            <h4><a href="">&#9788; Sat</a></h4>
+            <h4><a href="">&#9729; Sun</a></h4>
         </div>
         <!-- Weather symbols: &#9728;&#9729;&#9730;&#9731;&#9784;&#9788; -->
     </main>
@@ -197,6 +215,7 @@
     <script src="scripts/toggle-menu.js"></script>
     <script src="scripts/get-dates.js"></script>
     <script src="scripts/toggle-dark-light-mode.js"></script>
+    <script src="scripts/wind-chill.js"></script>
 </body>
 
 </html>
