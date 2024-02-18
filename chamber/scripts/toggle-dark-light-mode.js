@@ -16,6 +16,7 @@ const memberButton = document.querySelector('main #section1 span button');
 // https://stackoverflow.com/questions/68322315/queryselectorall-elements-not-changing-color-of-selected-classes
 const navLi = document.querySelectorAll('li');
 const main = document.querySelector('main');
+const heroLabel = document.querySelector('.heroLabel');
 const section2Div = document.querySelector('#section2 div');
 const section4Button = document.querySelector('#section4 button');
 const spotlightH3 = document.querySelectorAll('.spotlight h3');
@@ -39,6 +40,7 @@ sliderElem.addEventListener('click', function (event) {
         }
         main.style.backgroundColor = 'var(--black)';
         main.style.color = 'var(--white)';
+        heroLabel.style.background = 'rgba(0, 0, 0, 0.8)';
         section2Div.style.backgroundColor = 'var(--black)';
         section4Button.style.borderColor = 'var(--white)';
         section4Button.style.backgroundColor = 'var(--dark-red)';
@@ -74,7 +76,8 @@ sliderElem.addEventListener('click', function (event) {
             navLi[i].style.backgroundColor = 'var(--dark-grey)';  
         }
         main.style.backgroundColor = 'var(--white)';
-        main.style.color = 'var(--black)';        
+        main.style.color = 'var(--black)';
+        heroLabel.style.background = 'radial-gradient(rgba(255, 255, 255, 0.7), rgba(29, 65, 82, 0.2))';        
         section2Div.style.backgroundColor = 'var(--dark-grey)';
         section4Button.style.borderColor = 'var(--dark-red)';
         section4Button.style.backgroundColor = 'var(--white)';

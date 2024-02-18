@@ -229,7 +229,7 @@ main #section1 img {
     width: 30%;
     border: 1px solid #000;
     /* opacity is done with rgba with 0.75 as the opacity */
-    background: radial-gradient(rgb(255, 255, 255, 0.7), rgba(29, 65, 82, 0.2));
+    background: radial-gradient(rgba(255, 255, 255, 0.7), rgba(29, 65, 82, 0.2));
     box-shadow: 0 0 3rem #fff;
     padding: 1px;
     text-align: center;
