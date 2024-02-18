@@ -8,10 +8,6 @@
         background-color: var(--white);
     }
 
-    main #section1 {
-        margin-bottom: 100px;
-    }
-
     .heroLabel {
         top: 1vw;
         width: 10vw;
@@ -30,13 +26,5 @@
     .heroLabel p:nth-of-type(1),
     .heroLabel p:nth-of-type(2) {
         display: none;
-    }
-
-
-}
-
-@media (min-width: 1290px) {
-    main #section1 {
-        margin-bottom: 350px;
     }
 }

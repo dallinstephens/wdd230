@@ -128,10 +128,6 @@
         line-height: 40px;
     }
 
-    main #section1 {
-        margin-bottom: 185px;
-    }
-
     /* Section 2: Events */
     main #section2 {
         display: grid;
