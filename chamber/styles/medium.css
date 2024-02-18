@@ -102,11 +102,28 @@
         margin-left: 10px;
     }
 
+    .heroLabel {
+        top: 3vw;
+        width: 20%;
+        margin-left: 57vw;
+    }
+
+    /* Medium p block */
+    .heroLabel p:nth-of-type(2) {
+        display: block;
+    }
+
+    /* Small and large p blocks */
+    .heroLabel p:nth-of-type(1),
+    .heroLabel p:nth-of-type(3) {
+        display: none;
+    }
+
     main #section1 span {
         line-height: 50px
     }
 
-    main #section1 p {
+    main #section1>p {
         font-size: 20px;
         line-height: 40px;
     }
