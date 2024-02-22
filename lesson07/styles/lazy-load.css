@@ -1,0 +1,38 @@
+/* Reference for video: https://video.byui.edu/media/t/1_zj44pwzh */
+
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    background: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+
+    /* Do not show */
+    0% {
+        opacity: 0;
+    }
+
+    /* Show completely */
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
