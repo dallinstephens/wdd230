@@ -9,7 +9,7 @@
         border: 1px solid #000;
     }
 
-    .heroLabel p {
+    .heroLabel h2 {
         font-size: 3.5vw;
     }
 }
@@ -150,7 +150,7 @@
         border: 1px solid #000;
     }
 
-    .heroLabel p {
+    .heroLabel h2 {
         font-size: 2vw;
     }
 
