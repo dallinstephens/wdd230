@@ -213,7 +213,7 @@ nav ul li:nth-of-type(5) {
     padding: 2px;
 }
 
-.heroLabel p {
+.heroLabel h2 {
     font-size: 6vw;
     font-weight: bold;
 }
