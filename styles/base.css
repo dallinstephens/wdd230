@@ -61,11 +61,6 @@ header h1 {
     /* https://blog.hubspot.com/website/remove-underline-from-links-css */
     text-decoration: none;
     text-align: center;
-    font-size: 70px;
-    /* Reference for font-weight: */
-    /* https://www.w3schools.com/cssref/pr_font_weight.php */
-    font-weight: bold;
-    color: #fff;
 }
 
 #menu::before {
@@ -73,6 +68,11 @@ header h1 {
     top: -28px;
     right: 5px;
     content: "≡";
+    font-size: 70px;
+    /* Reference for font-weight: */
+    /* https://www.w3schools.com/cssref/pr_font_weight.php */
+    font-weight: bold;
+    color: #fff;
 }
 
 /* Reference for how to get windows emoji: */
