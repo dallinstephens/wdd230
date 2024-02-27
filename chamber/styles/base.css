@@ -8,10 +8,11 @@
 :root {
     --dark-red: #a50000;
     --dark-grey: #1d1a1a;
+    --medium-grey: #595959;
     --light-grey: #ccc;
     --black: #000000;
     --white: #ffffff;
-    --light-red: #ff6666;
+    --light-red: #ffcccc;
     --lora: 'Lora', serif;
 }
 
@@ -185,20 +186,27 @@ nav ul li {
     border: 2px solid var(--dark-grey);
     text-align: center;
     background-color: var(--dark-grey);
-    padding: 10px;
 }
 
 nav ul li:hover {
     border: 2px solid var(--white);
     background-color: var(--light-grey);
-
 }
 
+nav ul li:hover a {
+    color: var(--black);
+}
+
+/* Reference for how to make entire li clickable: */
+/* https://stackoverflow.com/questions/14803009/make-entire-li-clickable-with-a-element-inside-without-javascript */
 nav ul li a {
+    display: block;
+    height: 40px;
     text-decoration: none;
     color: var(--white);
     font-weight: bold;
     font-size: 20px;
+    padding: 10px;
 }
 
 main {
@@ -454,4 +462,80 @@ footer {
     color: var(--white);
     text-align: center;
     padding: 20px;
+}
+
+/* Specific styling for Discover Page */
+main.discoverPage {
+    padding: 0;
+}
+
+.sidebarContent {
+    margin: 20px;
+    /* References for box shadow: */
+    /* https://www.w3schools.com/css/css3_shadows_box.asp */
+    /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow4 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebarContent h2 {
+    background-color: var(--light-grey);
+}
+
+.sidebarContent p {
+    padding: 20px;
+    margin: 0;
+}
+
+.sidebarContent figure {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebarContent img {
+    width: 100%;
+    height: auto;
+}
+
+.sidebarContent figcaption {
+    position: relative;
+    top: -4px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--light-grey);
+    font-weight: bold;
+}
+
+.calendar {
+    text-align: center;
+}
+
+.calendar p {
+    line-height: 50px;
+}
+
+.imageGallery figure {
+    margin: 20px;
+    text-align: center;
+}
+
+.imageGallery picture {
+    margin: 0;
+    padding: 0;
+}
+
+.imageGallery figcaption {
+    position: relative;
+    top: -4px;
+    border: 5px double var(--dark-red);
+    background-color: var(--light-grey);
+    color: var(--black);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.imageGallery img {
+    width: 100%;
+    height: auto;
 }

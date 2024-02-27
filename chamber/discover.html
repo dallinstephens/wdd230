@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bountiful Chamber of Commerce</title>
+    <meta name="description"
+        content="Bountiful Chamber of Commerce. The Bountiful Chamber of Commerce helps provide networking for small businesses, helps create jobs for families and individuals, provides local news and the weather, and informs about local events in the area.">
+    <meta name="author" content="Dallin Stephens">
+    <!-- References for Social Media Meta: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/social-media-meta.html -->
+    <!-- https://css-tricks.com/essential-meta-tags-social-media/ -->
+    <!-- https://developers.facebook.com/docs/sharing/webmasters#markup -->
+    <meta property="og:title" content="Bountiful Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <!-- References for image: -->
+    <!-- https://openverse.org/image/8616ab3a-bf63-4ccc-b266-f311a56908be?q=bountiful%20Utah -->
+    <!-- https://commons.wikimedia.org/w/index.php?curid=7676990 -->
+    <!-- Bountiful City Image Attribution: https://www.flickr.com/photos/edgarzuniga/3835702113 -->
+    <meta property="og:image" content="https://live.staticflickr.com/2652/3835702113_f490460085_h.jpg">
+    <meta property="og:url" content="https://dallinstephens.github.io/wdd230/chamber/">
+
+    <!-- Reference for CSS Normalize: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/normalize.html -->
+    <!-- https://nicolasgallagher.com/about-normalize-css/ -->
+    <!-- https://github.com/necolas/normalize.css/blob/master/normalize.css -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- References on how to use Google Fonts Api: -->
+    <!-- https://fonts.google.com/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson01/aa-course-homepage-01.html -->
+    <!-- https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <!-- References for how I created my favicon: -->
+    <!-- https://www.favicon.cc/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/favicon.html -->
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#adding_custom_icons_to_your_site -->
+    <!-- https://www.w3schools.com/html/html_favicon.asp#:~:text=To%20add%20a%20favicon%20to,is%20%22favicon.ico%22. -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/bountiful-chamber-logo.webp" alt="Bountiful Chamber of Commerce Logo">
+        <h1>Bountiful<br>Chamber of Commerce</h1>
+        <!-- Reference for contact information (Bountiful Library): -->
+        <!-- https://library.utah.gov/directory/listing/south-branch-library-bountiful/ -->
+        <p>
+            <!-- Reference for symbols: -->
+            <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+            <span>&#9990; 801-451-1760</span><br>
+            <span>&#9993; library@co.davis.ut.us</span>
+        </p>
+        <p>
+            <span>725 S Main St</span><br>
+            <span>Bountiful, Utah 84010</span>
+        </p>
+    </header>
+
+    <!-- References on how to create hamburger menu: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson03/responsive-menu.html -->
+    <!-- https://codepen.io/blazzard-jason/pen/gmGxaj/ -->
+    <div id="menuHeader">
+        <a id="menu"></a>
+        <!-- Reference on how to create a toggle switch: -->
+        <!-- https://www.w3schools.com/howto/howto_css_switch.asp -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="../chamber/">Home</a></li>
+            <li><a href="../chamber/discover.html">Discover</a></li>
+            <li><a href="../chamber/#section1">About</a></li>
+            <li><a href="../chamber/#section2">Events</a></li>
+            <li><a href="../chamber/#section4">Team</a></li>
+            <li><a href="../chamber/#section5">Weather</a></li>
+        </ul>
+    </nav>
+
+    <main class="discoverPage">
+        <div class="sidebar">
+            <div class="sidebarContent">
+                <h2>Demographics</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, exercitationem ut nihil
+                    perferendis placeat inventore, impedit culpa porro, consectetur corrupti quaerat. Quam eaque
+                    recusandae eos ducimus distinctio, tempore blanditiis natus!
+                </p>
+            </div>
+            <div class="sidebarContent">
+                <h2>Statistical Data</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, exercitationem ut nihil
+                    perferendis placeat inventore, impedit culpa porro, consectetur corrupti quaerat. Quam eaque
+                    recusandae eos ducimus distinctio, tempore blanditiis natus!<br><br>
+                    <b>Visit Message:</b> <span id="visitMessage"></span>
+                </p>
+            </div>
+            <div class="sidebarContent">
+                <h2>Events</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, exercitationem ut nihil
+                    perferendis placeat inventore, impedit culpa porro, consectetur corrupti quaerat. Quam eaque
+                    recusandae eos ducimus distinctio, tempore blanditiis natus!
+                </p>
+            </div>
+            <div class="sidebarContent">
+                <h2>Attractions</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, exercitationem ut nihil
+                    perferendis placeat inventore, impedit culpa porro, consectetur corrupti quaerat. Quam eaque
+                    recusandae eos ducimus distinctio, tempore blanditiis natus!
+                </p>
+                <!-- Reference for Salt Lake Temple image: -->
+                <!-- https://www.churchofjesuschrist.org/temples/photo-gallery/salt-lake-temple?lang=eng -->
+                <figure>
+                    <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="640" height="400"
+                        loading="lazy">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+            <div class="calendar sidebarContent">
+                <!-- Reference for Calendar: -->
+                <!-- https://www.w3schools.com/tags/att_input_type_date.asp -->
+                <h2>Calendar</h2>
+                <p>
+                    To open the calendar, please click the calendar icon.<br>
+                    <input type="date" id="calendar" name="calendar">
+                </p>
+            </div>
+        </div>
+        <!-- References for picture tag inside figure tag and caption: -->
+        <!-- https://stackoverflow.com/questions/12899691/use-of-picture-inside-figure-element-in-html5 -->
+        <!-- https://www.w3schools.com/tags/tag_figcaption.asp -->
+        <div class="imageGallery">
+            <!-- Reference for welcome to Utah image: -->
+            <!-- Photo by Joshua T: https://www.pexels.com/photo/welcome-to-utah-poster-under-blue-daytime-sky-954289/ -->
+            <figure>
+                <picture>
+                    <source media="(max-width: 640px)" srcset="images/welcome-to-utah-small.jpg" width="640"
+                        height="360" loading="lazy">
+                    <source media="(max-width: 1000px)" srcset="images/welcome-to-utah-medium.jpg" width="1000"
+                        height="564" loading="lazy">
+                    <img src="images/welcome-to-utah-large.webp" alt="Welcome to Utah" width="1200" height="677"
+                        loading="lazy">
+                </picture>
+                <figcaption>Welcome to Utah</figcaption>
+            </figure>
+            <!-- Reference for Bountiful Temple image: -->
+            <!-- https://www.churchofjesuschrist.org/temples/photo-gallery/bountiful-utah-temple?lang=eng -->
+            <figure>
+                <picture>
+                    <source media="(max-width: 640px)" srcset="images/bountiful-temple-small.jpg" width="640"
+                        height="400" loading="lazy">
+                    <source media="(max-width: 1000px)" srcset="images/bountiful-temple-medium.webp" width="1000"
+                        height="625" loading="lazy">
+                    <img src="images/bountiful-temple-large.webp" alt="Bountiful Temple" width="1200" height="751"
+                        loading="lazy">
+                </picture>
+                <figcaption>Bountiful Temple</figcaption>
+            </figure>
+            <!-- Reference for mountains in Utah image: -->
+            <!-- Photo by Andrew Dibble: https://www.pexels.com/photo/trees-on-mountains-in-utah-in-autumn-10969545/ -->
+            <figure>
+                <picture>
+                    <source media="(max-width: 640px)" srcset="images/mountains-small.jpg" width="640" height="800"
+                        loading="lazy">
+                    <source media="(max-width: 1000px)" srcset="images/mountains-medium.webp" width="1000" height="1250"
+                        loading="lazy">
+                    <img src="images/mountains-large.webp" alt="Utah Mountains" width="1200" height="1500"
+                        loading="lazy">
+                </picture>
+                <figcaption>Mountains in Utah</figcaption>
+            </figure>
+            <!-- Reference for Utah State Capitol Building: -->
+            <!-- Photo by Lacza: https://www.pexels.com/photo/white-concrete-building-under-blue-sky-5039938/ -->
+            <figure>
+                <picture>
+                    <source media="(max-width: 640px)" srcset="images/utah-state-capitol-building-small.jpg" width="640"
+                        height="359" loading="lazy">
+                    <source media="(max-width: 1000px)" srcset="images/utah-state-capitol-building-medium.jpg"
+                        width="1000" height="562" loading="lazy">
+                    <img src="images/utah-state-capitol-building-large.webp" alt="Utah State Capitol Building"
+                        width="1200" height="675" loading="lazy">
+                </picture>
+                <figcaption>Utah State Capitol Building</figcaption>
+            </figure>
+            <!-- Reference for mountain deer image: -->
+            <!-- Photo by Joetography: https://www.pexels.com/photo/deer-walking-on-snow-covered-ground-6438858/ -->
+            <figure>
+                <picture>
+                    <source media="(max-width: 640px)" srcset="images/mountain-deer-small.jpg" width="640" height="456"
+                        loading="lazy">
+                    <source media="(max-width: 1000px)" srcset="images/mountain-deer-medium.webp" width="1000"
+                        height="714" loading="lazy">
+                    <img src="images/mountain-deer-large.webp" alt="Mountain Deer" width="1200" height="857"
+                        loading="lazy">
+                </picture>
+                <figcaption>Mountain Deer</figcaption>
+            </figure>
+            <!-- Reference for trail image: -->
+            <!-- Photo by PhotoMIX Company: https://www.pexels.com/photo/empty-road-surrounded-with-green-trees-172510/ -->
+            <figure>
+                <picture>
+                    <source media="(max-width: 640px)" srcset="images/trail-small.jpg" width="640" height="426"
+                        loading="lazy">
+                    <source media="(max-width: 1000px)" srcset="images/trail-medium.webp" width="1000" height="667"
+                        loading="lazy">
+                    <img src="images/trail-large.webp" alt="Trail" width="1200" height="801" loading="lazy">
+                </picture>
+                <figcaption>Hiking Trails in Utah</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <!-- Reference for symbols: -->
+            <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+            <span>&#9990; 801-451-1760</span><br>
+            <span>&#9993; library@co.davis.ut.us</span>
+        </p>
+        <p>
+            <span>725 S Main St</span><br>
+            <span>Bountiful, Utah 84010</span>
+        </p>
+        <p>
+            <!-- Reference on how to create copyright symbol: -->
+            <!-- https://careerkarma.com/blog/html-copyright-symbol/#:~:text=Conclusion,not%20represented%20on%20your%20keyboard. -->
+            &copy;<span id="year"><!-- Copyright Year generated here by JavaScript !--></span><br>
+            Dallin Stephens - Project for WDD 230 - Web Frontend Development<br>
+        </p>
+        <p id="lastModified"><!-- Last modification date & time generated here by Javascript --></p>
+    </footer>
+    <script src="scripts/toggle-menu.js"></script>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/toggle-dark-light-mode.js"></script>
+    <script src="scripts/latest-visit-date.js"></script>
+</body>
+
+</html>

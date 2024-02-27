@@ -55,6 +55,16 @@
         display: none;
     }
 
+    /* Reference for position sticky: */
+    /* https://www.w3schools.com/css/css_positioning.asp */
+    /* https://www.w3schools.com/css/tryit.asp?filename=trycss_position_sticky */
+    nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
     nav ul.navigation li {
         display: block;
         border: 10px solid var(--dark-grey);
@@ -342,6 +352,32 @@
     main #section5 h4:nth-of-type(7) {
         grid-row: 4 / 5;
         grid-column: 6 / 11;
+    }
+
+    /* Specific styling for Discover Page */
+    main.discoverPage {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    /* References for styling images with filter contrast: */
+    /* https://www.w3schools.com/css/css3_images.asp */
+    /* https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_filters */
+    main.discoverPage img:hover {
+        filter: contrast(180%);
+    }
+
+    main .sidebar {
+        grid-column: 1 / 2;
+        background-color: var(--medium-grey);
+    }
+
+    main .sidebarContent {
+        background-color: var(--white);
+    }
+
+    main .imageGallery {
+        grid-column: 2 / 3;
     }
 
 }
