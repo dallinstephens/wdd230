@@ -1,0 +1,132 @@
+/* References for html forms: */
+/* https://weblabs.spartandesignuniversity.com/web-forms.php */
+
+/* Reference for color picker: */
+/* https://www.w3schools.com/colors/colors_picker.asp */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --light-red: #ffeeee;
+    --red: #b30000;
+    --dark-red: #6f200e;
+    --black: #000;
+    --light-green: #bed;
+    --light-grey: #ddd;
+    --navy: navy;
+    --white: #fff;
+}
+
+main.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+}
+
+#form-message {
+    display: none;
+}
+
+fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--light-grey);
+    border-radius: 6px;
+    /* padding: top&bottom left&right */
+    padding: .5rem 2%;
+    width: 100%;
+}
+
+legend {
+    color: var(--navy);
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--black);
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    border-radius: 6px;
+    /* For mobile, need at least 44px tall */
+    padding: .75rem;
+    width: 100%;
+    /* This prevents it from becoming to wide. */
+    max-width: 400px;
+}
+
+/* Reference for input valid or invalid: */
+/* https://codepen.io/blazzard-jason/pen/yLrBZZy */
+input[type="text"]:required,
+input[type="password"]:required,
+input[type="email"]:required,
+#pageRatingValue {
+    /* light red color */
+    background-color: var(--light-red);
+}
+
+input[type="text"]:required:valid,
+input[type="password"]:required:valid,
+input[type="email"]:required:valid {
+    /* shade of green */
+    background-color: var(--light-green);
+}
+
+span.starRequired {
+    color: var(--red);
+}
+
+/* Reference for Page Range Values: */
+/* https://codepen.io/blazzard-jason/pen/WNNxwam */
+#pageRating {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 0;
+}
+
+#pageRatingValue {
+    font-size: 2rem;
+    border: 1px solid var(--black);
+    /* Reference for creating round circle: */
+    /* https://www.w3schools.com/howto/howto_css_rounded_images.asp */
+    border-radius: 50%;
+    color: var(--black);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 10px;
+    line-height: 38px;
+}
+
+datalist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 26rem;
+    margin-left: 1rem;
+}
+
+input[type="submit"] {
+    border: none;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    /* For mobile, need at least 44px tall */
+    padding: .75rem;
+    background-image: linear-gradient(var(--red), var(--dark-red));
+    color: var(--white);
+}
+
+@media (min-width: 480px) {
+    datalist {
+        max-width: 380px;
+    }
+}

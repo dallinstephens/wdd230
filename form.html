@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
     <!-- References on how to use Google Fonts Api: -->
     <!-- https://fonts.google.com/ -->
     <!-- https://byui-cse.github.io/wdd230-course/lesson01/aa-course-homepage-01.html -->
@@ -74,29 +75,52 @@
                     target="_blank">Scripture</a></li>
         </ul>
     </nav>
-    <main>
-        <div id="formMessage"></div>
+    <main class="form">
+        <h1>Application Form</h1>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Applicant Information</legend>
-                <label>Username*<input type="text" id="username" name="username" required></label>
+                <label>Username <span class="starRequired">*</span><input type="text" id="username" name="username"
+                        required></label>
                 <!-- Reference for password pattern - at least 8 characters long & only alpha-numberic: -->
                 <!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
-                <label>Password*<input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}"
-                        title="At least 8 characters long. Alpha-numeric only." required></label>
-                <!-- Reference for focusout: -->
-                <!-- https://www.w3schools.com/jsreF/tryit.asp?filename=tryjsref_onfocusin_eventdelegation -->
-                <label>Repeat Password*<input type="password" id="repeatPassword" name="repeatPassword"
+                <label>Password <span class="starRequired">*</span><input type="password" id="password" name="password"
                         pattern="[A-Za-z0-9]{8,}" title="At least 8 characters long. Alpha-numeric only."
                         required></label>
+                <!-- Reference for focusout: -->
+                <!-- https://www.w3schools.com/jsreF/tryit.asp?filename=tryjsref_onfocusin_eventdelegation -->
+                <label>Repeat Password <span class="starRequired">*</span><input type="password" id="repeatPassword"
+                        name="repeatPassword" pattern="[A-Za-z0-9]{8,}"
+                        title="At least 8 characters long. Alpha-numeric only." required></label>
                 <!-- References for pattern for email: -->
                 <!-- https://codepen.io/blazzard-jason/pen/yLrBZZy -->
                 <!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
-                <label>Email*<input type="email" id="email" name="email" placeholder="Your byui email address"
-                        title="Enter a valid byui.edu email address." pattern="[a-zA-Z0-9_.-]+@byui.edu"
-                        required></label>
-                <label>Page Rating*<input type="text" id="username" name="username" required></label>
+                <label>Email <span class="starRequired">*</span><input type="email" id="email" name="email"
+                        placeholder="Your byui email address" title="Enter a valid byui.edu email address."
+                        pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                <!-- References for input type range and datalist: -->
+                <!-- https://codepen.io/blazzard-jason/pen/WNNxwam -->
+                <!-- https://www.w3schools.com/tags/tag_datalist.asp -->
+                <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range -->
+                <label for="pageRating">Page Rating</label>
+                <div id="pageRatingValue">1</div>
+                <input type="range" id="pageRating" name="pageRating" min="1" max="10" value="1" step="1"
+                    list="pageRatingValues">
+                <datalist id="pageRatingValues">
+                    <option value="1" label="1"></option>
+                    <option value="2" label="2"></option>
+                    <option value="3" label="3"></option>
+                    <option value="4" label="4"></option>
+                    <option value="5" label="5"></option>
+                    <option value="6" label="6"></option>
+                    <option value="7" label="7"></option>
+                    <option value="8" label="8"></option>
+                    <option value="9" label="9"></option>
+                    <option value="10" label="10"></option>
+                </datalist>
             </fieldset>
+
+            <input type="submit" value="Record Info">
         </form>
     </main>
     <footer>

@@ -1,9 +1,0 @@
-#form-message {
-    display: none;
-}
-
-/* Reference for input email valid or invalid: */
-/* https://codepen.io/blazzard-jason/pen/yLrBZZy */
-input[name="email"]:required:valid {
-    background-color: #bed;
-}
