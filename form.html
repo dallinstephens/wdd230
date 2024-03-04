@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Reference for form assignment: -->
+<!-- https://byui-cse.github.io/wdd230-course/lesson08/aa-form-build.html -->
+
+<head>
+    <!-- Reference for ordering of tags in the head tag: -->
+    <!-- https://adamhollett.com/posts/2016/07/best-order-for-elements-in-head-tags/#:~:text=In%20this%20StackOverflow%20discussion%2C%20someone,ordered%20any%20way%20you%20like. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dallin Stephens - WDD 230 - Web Frontend Development</title>
+
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development - Dallin Lance Stephens - course assignment portal. This is a course about using HTML, CSS, and JavaScript.">
+    <meta name="author" content="Dallin Stephens">
+
+    <!-- Reference for CSS Normalize: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/normalize.html -->
+    <!-- https://nicolasgallagher.com/about-normalize-css/ -->
+    <!-- https://github.com/necolas/normalize.css/blob/master/normalize.css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- References on how to use Google Fonts Api: -->
+    <!-- https://fonts.google.com/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson01/aa-course-homepage-01.html -->
+    <!-- https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif">
+    <!-- References for how I created my favicon: -->
+    <!-- https://www.favicon.cc/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/favicon.html -->
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#adding_custom_icons_to_your_site -->
+    <!-- https://www.w3schools.com/html/html_favicon.asp#:~:text=To%20add%20a%20favicon%20to,is%20%22favicon.ico%22. -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- References for Social Media Meta: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/social-media-meta.html -->
+    <!-- https://css-tricks.com/essential-meta-tags-social-media/ -->
+    <!-- https://developers.facebook.com/docs/sharing/webmasters#markup -->
+    <meta property="og:title" content="Dallin Stephens - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <!-- References for image: -->
+    <!-- https://openverse.org/image/8616ab3a-bf63-4ccc-b266-f311a56908be?q=bountiful%20Utah -->
+    <!-- https://commons.wikimedia.org/w/index.php?curid=7676990 -->
+    <!-- Attribution for image: "047 Bountiful, Utah-cropped" by Trödel cropped and digitally enhanced image by Andy K. Nelson is licensed under CC BY-SA 3.0. -->
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/047_Bountiful%2C_Utah-cropped.jpg/658px-047_Bountiful%2C_Utah-cropped.jpg?20090828155129">
+    <meta property="og:url" content="https://dallinstephens.github.io/wdd230/">
+</head>
+
+<body>
+    <header>
+        <img src="images/dallin-stephens.webp" alt="profile image of Dallin Stephens" loading="eager">
+        <h1>Dallin Stephens</h1>
+        <!-- References on how to create hamburger menu: -->
+        <!-- https://byui-cse.github.io/wdd230-course/lesson03/responsive-menu.html -->
+        <!-- https://codepen.io/blazzard-jason/pen/gmGxaj/ -->
+        <a id="menu" href="#">M</a>
+    </header>
+    <!-- Reference on how to create navigation bar: -->
+    <!-- https://www.w3schools.com/css/css_navbar.asp -->
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <!-- Reference on how to open new window or tab: -->
+            <!-- https://www.w3schools.com/tags/att_a_target.asp -->
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=45#p44"
+                    target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="formMessage"></div>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>Username*<input type="text" id="username" name="username" required></label>
+                <!-- Reference for password pattern - at least 8 characters long & only alpha-numberic: -->
+                <!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
+                <label>Password*<input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}"
+                        title="At least 8 characters long. Alpha-numeric only." required></label>
+                <!-- Reference for focusout: -->
+                <!-- https://www.w3schools.com/jsreF/tryit.asp?filename=tryjsref_onfocusin_eventdelegation -->
+                <label>Repeat Password*<input type="password" id="repeatPassword" name="repeatPassword"
+                        pattern="[A-Za-z0-9]{8,}" title="At least 8 characters long. Alpha-numeric only."
+                        required></label>
+                <!-- References for pattern for email: -->
+                <!-- https://codepen.io/blazzard-jason/pen/yLrBZZy -->
+                <!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
+                <label>Email*<input type="email" id="email" name="email" placeholder="Your byui email address"
+                        title="Enter a valid byui.edu email address." pattern="[a-zA-Z0-9_.-]+@byui.edu"
+                        required></label>
+                <label>Page Rating*<input type="text" id="username" name="username" required></label>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+            <!-- Reference on how to create copyright symbol: -->
+            <!-- https://careerkarma.com/blog/html-copyright-symbol/#:~:text=Conclusion,not%20represented%20on%20your%20keyboard. -->
+            &copy;<span><!-- Copyright Year generated here by JavaScript !--></span><br>
+            Dallin Stephens<br>
+            Utah
+        </p>
+        <p id="lastModified"><!-- Last modification date & time generated here by Javascript --></p>
+    </footer>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/toggle-menu.js"></script>
+    <script src="scripts/page-visit-counter.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
