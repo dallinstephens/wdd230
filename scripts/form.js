@@ -3,12 +3,13 @@
 
 const password = document.querySelector('#password');
 const repeatPassword = document.querySelector('#repeatPassword');
+const formMessage = document.querySelector('#formMessage');
 
 repeatPassword.addEventListener("focusout", checkIfSame);
 
 function checkIfSame() {
     if (password.value !== repeatPassword.value) {
-        alert("Passwords do not match! Please try again. Note: The password needs to be at least 8 characters long and alpha-numeric only.")
+        formMessage.textContent = "Passwords do not match! Please try again. Note: The password needs to be at least 8 characters long and alpha-numeric only.";
         formMessage.style.display = "block";
         repeatPassword.style.backgroundColor = "#fff0f3";
         repeatPassword.value = "";
