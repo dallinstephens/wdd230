@@ -381,3 +381,24 @@
     }
 
 }
+
+/* Specific styling for Join Page */
+@media (min-width: 700px) {
+    main.joinPage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    main.joinPage .joinApplicationContainer {
+        grid-column: 1 / 2;
+    }
+
+    main.joinPage .benefitsContainer {
+        grid-column: 2 / 3;
+    }
+
+    main.joinPage section.benefits:nth-of-type(1) {
+        margin-top: 0.9rem;
+    }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Reference for Join Assignment: -->
+<!-- https://byui-cse.github.io/wdd230-course/lesson08/aa-chamber-join.html -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join the Bountiful Chamber of Commerce</title>
+    <meta name="description" content="Join Form Page for the Bountiful Chamber of Commerce.">
+    <meta name="author" content="Dallin Stephens">
+    <!-- References for Social Media Meta: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/social-media-meta.html -->
+    <!-- https://css-tricks.com/essential-meta-tags-social-media/ -->
+    <!-- https://developers.facebook.com/docs/sharing/webmasters#markup -->
+    <meta property="og:title" content="Join the Bountiful Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <!-- References for image: -->
+    <!-- https://openverse.org/image/8616ab3a-bf63-4ccc-b266-f311a56908be?q=bountiful%20Utah -->
+    <!-- https://commons.wikimedia.org/w/index.php?curid=7676990 -->
+    <!-- Bountiful City Image Attribution: https://www.flickr.com/photos/edgarzuniga/3835702113 -->
+    <meta property="og:image" content="https://live.staticflickr.com/2652/3835702113_f490460085_h.jpg">
+    <meta property="og:url" content="https://dallinstephens.github.io/wdd230/chamber/join.html">
+
+    <!-- Reference for CSS Normalize: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/normalize.html -->
+    <!-- https://nicolasgallagher.com/about-normalize-css/ -->
+    <!-- https://github.com/necolas/normalize.css/blob/master/normalize.css -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- References on how to use Google Fonts Api: -->
+    <!-- https://fonts.google.com/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson01/aa-course-homepage-01.html -->
+    <!-- https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <!-- References for how I created my favicon: -->
+    <!-- https://www.favicon.cc/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/favicon.html -->
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#adding_custom_icons_to_your_site -->
+    <!-- https://www.w3schools.com/html/html_favicon.asp#:~:text=To%20add%20a%20favicon%20to,is%20%22favicon.ico%22. -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/bountiful-chamber-logo.webp" alt="Bountiful Chamber of Commerce Logo">
+        <h1>Join the Bountiful<br>Chamber of Commerce</h1>
+        <!-- Reference for contact information (Bountiful Library): -->
+        <!-- https://library.utah.gov/directory/listing/south-branch-library-bountiful/ -->
+        <p>
+            <!-- Reference for symbols: -->
+            <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+            <span>&#9990; 801-451-1760</span><br>
+            <span>&#9993; library@co.davis.ut.us</span>
+        </p>
+        <p>
+            <span>725 S Main St</span><br>
+            <span>Bountiful, Utah 84010</span>
+        </p>
+    </header>
+
+    <!-- References on how to create hamburger menu: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson03/responsive-menu.html -->
+    <!-- https://codepen.io/blazzard-jason/pen/gmGxaj/ -->
+    <div id="menuHeader">
+        <a id="menu"></a>
+        <!-- Reference on how to create a toggle switch: -->
+        <!-- https://www.w3schools.com/howto/howto_css_switch.asp -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="../chamber/">Home</a></li>
+            <li><a href="../chamber/discover.html">Discover</a></li>
+            <li><a href="../chamber/directory.html">Directory</a></li>
+            <li><a href="../chamber/join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="joinPage">
+        <div class="joinApplicationContainer">
+            <h2>Join Application</h2>
+            <!-- class wf1 stands for web form 1 -->
+            <form method="get" action="thank-you.html" id="joinForm">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>First Name * <input type="text" id="fname" name="fname" required></label>
+                    <label>Last Name * <input type="text" id="lname" name="lname" required></label>
+                    <!-- References for creating input pattern: -->
+                    <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions -->
+                    <!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
+                    <label>Email * <input type="email" id="email" name="email" placeholder="someone@gmail.com"
+                            required></label>
+                    <label>Mobile Phone * <input type="tel" id="phone" name="phone" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business/Organization Information</legend>
+                    <label>Business/Organization Name * <input type="text" id="organization" name="organization"
+                            required></label>
+                    <label>Title * <input type="text" id="title" name="title" pattern="[A-Za-z *\-*]{7,}"
+                            placeholder="Title or position within your organization"
+                            title="Only alpha characters, hypens, and spaces. Minimum 7 characters." required></label>
+
+                    <div class="membershipLevel">Membership Level</div>
+                    <label><input type="radio" id="npMembership" name="membershipLevel" value="NP Membership">NP
+                        Membership</label>
+                    <label><input type="radio" id="bronzeMembership" name="membershipLevel"
+                            value="Bronze Membership">Broze
+                        Membership</label>
+                    <label><input type="radio" id="silverMembership" name="membershipLevel"
+                            value="Silver Membership">Silver
+                        Membership</label>
+                    <label><input type="radio" id="goldMembership" name="membershipLevel" value="Gold Membership">Gold
+                        Membership</label>
+                    <div class="note"><i>*** Note that a NP Membership is for non profit organizations and there is no
+                            fee.</i></div>
+
+                    <!-- Reference for textarea: -->
+                    <!-- https://www.w3schools.com/tags/tag_textarea.asp -->
+                    <label class="description" for="organizationDescription">Business/Organization Description</label>
+                    <textarea id="organizationDescription" name="organizationDescription" rows="4" cols="50"></textarea>
+
+                </fieldset>
+
+                <input type="hidden" id="dateAndTimeWhenFormSubmitted" name="dateAndTimeWhenFormSubmitted">
+
+                <input type="submit" value="Join Chamber">
+
+            </form>
+        </div>
+
+        <div class="benefitsContainer">
+            <h2>Membership Level Benefits</h2>
+            <section class="benefits">
+                <h3>Special Events</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum dolor iure velit voluptate.
+                    Neque
+                    iure optio quas nam culpa. Nesciunt animi voluptatum ducimus aspernatur aut architecto cumque
+                    impedit
+                    cum.
+                    Perspiciatis tempore praesentium tempora? Iusto nihil, repellat reiciendis cupiditate asperiores
+                    fuga
+                    illum magni explicabo laudantium, dignissimos magnam alias tempore unde dolore eaque, officiis
+                    cumque
+                    suscipit omnis fugiat aut excepturi impedit.</p>
+            </section>
+            <section class="benefits">
+                <h3>Training</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum dolor iure velit voluptate.
+                    Neque
+                    iure optio quas nam culpa. Nesciunt animi voluptatum ducimus aspernatur aut architecto cumque
+                    impedit
+                    cum.
+                    Perspiciatis tempore praesentium tempora? Iusto nihil, repellat reiciendis cupiditate asperiores
+                    fuga
+                    illum magni explicabo laudantium, dignissimos magnam alias tempore unde dolore eaque, officiis
+                    cumque
+                    suscipit omnis fugiat aut excepturi impedit.</p>
+            </section>
+            <section class="benefits">
+                <h3>Advertising</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum dolor iure velit voluptate.
+                    Neque
+                    iure optio quas nam culpa. Nesciunt animi voluptatum ducimus aspernatur aut architecto cumque
+                    impedit
+                    cum.
+                    Perspiciatis tempore praesentium tempora? Iusto nihil, repellat reiciendis cupiditate asperiores
+                    fuga
+                    illum magni explicabo laudantium, dignissimos magnam alias tempore unde dolore eaque, officiis
+                    cumque
+                    suscipit omnis fugiat aut excepturi impedit.</p>
+            </section>
+            <section class="benefits">
+                <h3>Event Discounts</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum dolor iure velit voluptate.
+                    Neque
+                    iure optio quas nam culpa. Nesciunt animi voluptatum ducimus aspernatur aut architecto cumque
+                    impedit
+                    cum.
+                    Perspiciatis tempore praesentium tempora? Iusto nihil, repellat reiciendis cupiditate asperiores
+                    fuga
+                    illum magni explicabo laudantium, dignissimos magnam alias tempore unde dolore eaque, officiis
+                    cumque
+                    suscipit omnis fugiat aut excepturi impedit.</p>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            <!-- Reference for symbols: -->
+            <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+            <span>&#9990; 801-451-1760</span><br>
+            <span>&#9993; library@co.davis.ut.us</span>
+        </p>
+        <p>
+            <span>725 S Main St</span><br>
+            <span>Bountiful, Utah 84010</span>
+        </p>
+        <p>
+            <!-- Reference on how to create copyright symbol: -->
+            <!-- https://careerkarma.com/blog/html-copyright-symbol/#:~:text=Conclusion,not%20represented%20on%20your%20keyboard. -->
+            &copy;<span id="year"><!-- Copyright Year generated here by JavaScript !--></span><br>
+            Dallin Stephens - Project for WDD 230 - Web Frontend Development<br>
+        </p>
+        <p id="lastModified"><!-- Last modification date & time generated here by Javascript --></p>
+    </footer>
+    <script src="scripts/toggle-menu.js"></script>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/toggle-dark-light-mode.js"></script>
+    <script src="scripts/log-date-time-form-submitted.js"></script>
+</body>
+
+</html>
