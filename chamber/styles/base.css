@@ -287,6 +287,7 @@ main #section1 p {
 /* Arts museum image */
 main #section2 img {
     width: 100%;
+    height: auto;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -367,6 +368,7 @@ main #section4 button {
 
 main #section4 img {
     width: 100%;
+    height: auto;
 }
 
 main #section4 h2 {
@@ -431,8 +433,15 @@ main #section5 div {
     line-height: 40px;
 }
 
-main #section5 div>span {
-    display: block;
+main #section5 input {
+    width: 50px;
+    text-align: center;
+}
+
+main #section5 input#windChill {
+    width: 50px;
+    text-align: center;
+    background-color: yellow;
 }
 
 main #section5 h4 {

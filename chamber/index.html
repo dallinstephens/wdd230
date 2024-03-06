@@ -46,7 +46,7 @@
 
 <body>
     <header>
-        <img src="images/bountiful-chamber-logo.webp" alt="Bountiful Chamber of Commerce Logo">
+        <img src="images/bountiful-chamber-logo.webp" alt="Bountiful Chamber of Commerce Logo" width="200" height="200">
         <h1>Bountiful<br>Chamber of Commerce</h1>
         <!-- Reference for contact information (Bountiful Library): -->
         <!-- https://library.utah.gov/directory/listing/south-branch-library-bountiful/ -->
@@ -93,11 +93,13 @@
             <!-- References for image: -->
             <!-- https://byui-cse.github.io/wdd230-course/lesson06/aa-chamber-home-06.html -->
             <!-- https://byui-cse.github.io/wdd230-course/images/l06/wdd230-org.jpg -->
+            <!-- Reference for auto updating image size using emmet in visual studio code: -->
+            <!-- https://burkeholland.gitbook.io/vs-code-can-do-that/exercise-2-productivity-tricks/update-image-sizes -->
+
             <picture>
-                <source style="width: 100vw" media="(max-width: 639px)" srcset="images/hero-small.webp" width="652"
-                    height="642">
-                <source media="(max-width: 999px)" srcset="images/hero-medium.webp" width="1015" height="869">
-                <img src="images/hero-large.webp" alt="Individuals meeting" width="1286" height="857">
+                <source media="(max-width: 639px)" srcset="images/hero-small.webp" width="370" height="268">
+                <source media="(max-width: 999px)" srcset="images/hero-medium.webp" width="453" height="350">
+                <img src="images/hero-large.webp" alt="Individuals meeting" width="640" height="426">
             </picture>
             <div class="heroLabel">
                 <!-- Reference on how to show small, medium and large: -->
@@ -115,7 +117,7 @@
         <!-- Section 2 -->
         <div id="section2">
             <!-- Art museum image attribution: https://unsplash.com/photos/assorted-picture-frames-on-wall-acowe0pCVBg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
-            <img src="images/art-museum.webp" alt="Art museum">
+            <img src="images/art-museum.webp" alt="Art museum" width="640" height="427">
             <div>
                 <h3>Events Soon to Come</h3>
                 <!-- Reference for calendar symbol: -->
@@ -144,7 +146,7 @@
         <div id="section4">
             <button>Learn more about the team</button>
             <!-- Attribution for image: https://unsplash.com/photos/people-sitting-on-chair-in-front-of-laptop-computers-rMILC1PIwM0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
-            <img src="images/team.webp" alt="Team">
+            <img src="images/team.webp" alt="Team" width="640" height="414">
 
             <h2>Member Spotlights</h2>
             <div class="spotlight">
@@ -181,12 +183,15 @@
             <h3>Weather
             </h3>
             <div>
-                <span id="temperatureContainer"><span id="temperature">0</span>&deg;F</span>
                 <!-- Reference for weather symbols: -->
                 <!-- https://www.alt-codes.net/weather-symbols.php -->
-                <span id="weatherConditionContainer"><span id="weatherCondition">&#x26C5;Partly Cloudy</span></span>
-                <span id="windSpeedContainer">Wind Speed: <span id="windSpeed">25</span> mph</span>
-                <span id="windChillContainer">Wind Chill: <span id="windChill"></span>&deg;F</span>
+                <div id="weatherConditionContainer"><span id="weatherCondition">&#x26C5;Partly Cloudy</span></div>
+                <div id="temperatureContainer"><label>Temperature: <input id="temperature"><span>&deg;F</span></label>
+                </div>
+                <div id="windSpeedContainer"><label>Wind Speed: <input id="windSpeed"><span>mph</span></label></div>
+                <!-- Reference for input readonly: https://www.w3schools.com/tags/att_input_readonly.asp -->
+                <div id="windChillContainer"><label>Wind Chill: <input id="windChill"
+                            readonly><span>&deg;F</span></label></div>
             </div>
             <h4><a href="">&#9788; Mon</a></h4>
             <h4><a href="">&#9729; Tue</a></h4>

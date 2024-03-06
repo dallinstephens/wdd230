@@ -277,7 +277,7 @@
         margin: 0;
     }
 
-    main #section5 div {
+    main #section5>div {
         grid-row: 2 / 3;
         grid-column: 1 / 11;
         display: grid;
