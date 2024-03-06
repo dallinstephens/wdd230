@@ -360,11 +360,13 @@
         grid-template-columns: 1fr 2fr;
     }
 
-    /* References for styling images with filter contrast: */
+    /* References for styling images with filter contrast and box-shadow: */
     /* https://www.w3schools.com/css/css3_images.asp */
     /* https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_filters */
+    /* https://www.w3schools.com/css/css3_images.asp */
     main.discoverPage img:hover {
-        filter: contrast(180%);
+        filter: contrast(250%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
     }
 
     main .sidebar {

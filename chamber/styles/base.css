@@ -490,9 +490,28 @@ main.discoverPage {
     background-color: var(--light-grey);
 }
 
+span#visitMessage {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebarContent a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 5px double var(--dark-red);
+    background-color: var(--light-grey);
+    padding: 10px;
+    /* Reference for blue link color: */
+    /* https://stackoverflow.com/questions/4774022/whats-default-html-css-link-color */
+    color: #0000EE;
+}
+
 .sidebarContent p {
-    padding: 20px;
-    margin: 0;
+    line-height: 25px;
+    padding: 0 20px;
 }
 
 .sidebarContent figure {

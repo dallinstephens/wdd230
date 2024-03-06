@@ -46,7 +46,7 @@
 
 <body>
     <header>
-        <img src="images/bountiful-chamber-logo.webp" alt="Bountiful Chamber of Commerce Logo">
+        <img src="images/bountiful-chamber-logo.webp" alt="Bountiful Chamber of Commerce Logo" width="200" height="200">
         <h1>Chamber of Commerce<br>Discover Page</h1>
         <!-- Reference for contact information (Bountiful Library): -->
         <!-- https://library.utah.gov/directory/listing/south-branch-library-bountiful/ -->
@@ -87,32 +87,54 @@
     <main class="discoverPage">
         <div class="sidebar">
             <div class="sidebarContent">
+                <h2>Welcome</h2>
+                <span id="visitMessage"></span>
+            </div>
+            <div class="sidebarContent">
                 <h2>Demographics</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, exercitationem ut nihil
-                    perferendis placeat inventore, impedit culpa porro, consectetur corrupti quaerat. Quam eaque
-                    recusandae eos ducimus distinctio, tempore blanditiis natus!
+                <p>The city of Bountiful Utah is located in Davis County which is north of Salt Lake City. The
+                    population of Bountiful in 2024 was calculated to be 42,529. The average household income was
+                    calculated at $123,037.
                 </p>
+                <a href="https://worldpopulationreview.com/us-cities/bountiful-ut-population" target="_blank">Reference
+                    for Demographics</a>
             </div>
             <div class="sidebarContent">
                 <h2>Statistical Data</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, exercitationem ut nihil
-                    perferendis placeat inventore, impedit culpa porro, consectetur corrupti quaerat. Quam eaque
-                    recusandae eos ducimus distinctio, tempore blanditiis natus!<br><br>
-                    <b>Visit Message:</b> <span id="visitMessage"></span>
-                </p>
+                <ul>
+                    <li>White: 89.71%</li>
+                    <li>Two or more races: 5.12%</li>
+                    <li>Other race: 1.4%</li>
+                    <li>Asian: 1.37%</li>
+                    <li>Black or African American: 1.23%</li>
+                    <li>Native Hawaiian or Pacific Islander: 0.71%</li>
+                    <li>Native American: 0.47%</li>
+                </ul>
+                <a href="https://worldpopulationreview.com/us-cities/bountiful-ut-population" target="_blank">Reference
+                    for Statistical Data</a>
             </div>
             <div class="sidebarContent">
-                <h2>Events</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, exercitationem ut nihil
-                    perferendis placeat inventore, impedit culpa porro, consectetur corrupti quaerat. Quam eaque
-                    recusandae eos ducimus distinctio, tempore blanditiis natus!
+                <h2>News</h2>
+                <p>The Church of Jesus Christ of Latter-Day Saints purchases the Kirtland Ohio Temple for nearly $193
+                    million.
                 </p>
+                <!-- Reference for Kirtland Temple image: -->
+                <!-- https://www.churchofjesuschrist.org/media/collection/kirtland-ohio-temple-images?lang=eng -->
+                <figure>
+                    <img src="images/kirtland-temple.webp" alt="Kirtland Temple" loading="lazy" width="320"
+                        height="251">
+                    <figcaption>Kirtland Temple</figcaption>
+                </figure>
+                <a
+                    href="https://www.newsbreak.com/salt-lake-city-ut/3356939053828-the-church-of-jesus-christ-of-latter-day-saints-acquires-kirtland-temple-artifacts-in-nearly-193-million-purchase">News
+                    Reference</a>
             </div>
             <div class="sidebarContent">
                 <h2>Attractions</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, exercitationem ut nihil
-                    perferendis placeat inventore, impedit culpa porro, consectetur corrupti quaerat. Quam eaque
-                    recusandae eos ducimus distinctio, tempore blanditiis natus!
+                <p>The Salt Lake Temple is located in downtown Salt Lake near the Church Office Building and the General
+                    Conference Center for The Church of Jesus Christ of Latter-Day Saints. The Salt Lake Temple is
+                    currently being fixed to make it earthquake proof. Visitors can still walk in temple square and see
+                    the temple reconstruction work.
                 </p>
                 <!-- Reference for Salt Lake Temple image: -->
                 <!-- https://www.churchofjesuschrist.org/temples/photo-gallery/salt-lake-temple?lang=eng -->
@@ -139,7 +161,7 @@
             <!-- Reference for welcome to Utah image: -->
             <!-- Photo by Joshua T: https://www.pexels.com/photo/welcome-to-utah-poster-under-blue-daytime-sky-954289/ -->
             <figure>
-                <img src="images/welcome-to-utah.webp" alt="Welcome to Utah" loading="lazy" width="640" height="360">
+                <img src="images/welcome-to-utah.webp" alt="Welcome to Utah" loading="eager" width="640" height="360">
                 <figcaption>Welcome to Utah</figcaption>
             </figure>
             <!-- Reference for Bountiful Temple image: -->
