@@ -506,7 +506,8 @@ span#visitMessage {
     padding: 10px;
     /* Reference for blue link color: */
     /* https://stackoverflow.com/questions/4774022/whats-default-html-css-link-color */
-    color: #0000EE;
+    color: var(--black);
+    font-weight: bold;
 }
 
 .sidebarContent p {
