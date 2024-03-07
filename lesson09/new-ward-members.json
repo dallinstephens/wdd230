@@ -1,0 +1,20 @@
+{
+    "wardInformation": {
+        "familyName": "Stephens",
+        "dateFamilyMovedIntoWard": "2025-01-12",
+        "numberInFamily": 2,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Dallin Stephens",
+                "gender": "Male",
+                "birthdate": "1977-12-01"
+            },
+            {
+                "name": "Sharlene Stephens",
+                "gender": "Female",
+                "birthdate": "1987-02-01"
+            }
+        ]
+    }
+}
