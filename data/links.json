@@ -1,0 +1,130 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson01/holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url": "https://codepen.io/DallinS/pen/OJqbrZL",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson02/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson03/images/combinators-screenshot.jpg",
+                    "title": "Combinators Screenshot"
+                },
+                {
+                    "url": "https://codepen.io/DallinS/pen/QWoqErG",
+                    "title": "CSS Pseudo-elements (CodePen)"
+                },
+                {
+                    "url": "https://codepen.io/DallinS/pen/QWoOPKd",
+                    "title": "Responsive Hamburger Menu (CodePen)"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/DallinS/pen/wvOyjow",
+                    "title": "CSS Pseudo-classes (CodePen)"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson05/bom.html",
+                    "title": "BOM Application"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson06/images/landscape.webp",
+                    "title": "WebP Image"
+                },
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson07/lazy-load.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson07/bom.html",
+                    "title": "Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson08/table-build.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson08/",
+                    "title": "HTML Forms"
+                },
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/form.html",
+                    "title": "Form Build"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "https://dallinstephens.github.io/wdd230/lesson09/new-ward-members.json",
+                    "title": "JSON File"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "https://www.churchofjesuschrist.org/welcome/bible-book-of-mormon-word-of-god?lang=eng",
+                    "title": "Placeholder"
+                }
+            ]
+        }
+    ]
+}
