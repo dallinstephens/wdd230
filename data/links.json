@@ -4,7 +4,7 @@
             "lesson": "01",
             "links": [
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson01/holygrail.html",
+                    "url": "lesson01/holygrail.html",
                     "title": "Holy Grail"
                 },
                 {
@@ -17,15 +17,15 @@
             "lesson": "02",
             "links": [
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson02/media-query.html",
+                    "url": "lesson02/media-query.html",
                     "title": "Media Query"
                 },
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson02/design.html",
+                    "url": "lesson02/design.html",
                     "title": "Design"
                 },
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson02/design-principles.html",
+                    "url": "lesson02/design-principles.html",
                     "title": "Design Principles Document"
                 }
             ]
@@ -34,7 +34,7 @@
             "lesson": "03",
             "links": [
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson03/images/combinators-screenshot.jpg",
+                    "url": "lesson03/images/combinators-screenshot.jpg",
                     "title": "Combinators Screenshot"
                 },
                 {
@@ -60,7 +60,7 @@
             "lesson": "05",
             "links": [
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson05/bom.html",
+                    "url": "lesson05/bom.html",
                     "title": "BOM Application"
                 }
             ]
@@ -69,11 +69,11 @@
             "lesson": "06",
             "links": [
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson06/images/landscape.webp",
+                    "url": "lesson06/images/landscape.webp",
                     "title": "WebP Image"
                 },
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson06/responsive-images.html",
+                    "url": "lesson06/responsive-images.html",
                     "title": "Responsive Images"
                 }
             ]
@@ -82,11 +82,11 @@
             "lesson": "07",
             "links": [
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson07/lazy-load.html",
+                    "url": "lesson07/lazy-load.html",
                     "title": "Lazy Loading"
                 },
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson07/bom.html",
+                    "url": "lesson07/bom.html",
                     "title": "Local Storage"
                 }
             ]
@@ -95,15 +95,15 @@
             "lesson": "08",
             "links": [
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson08/table-build.html",
+                    "url": "lesson08/table-build.html",
                     "title": "HTML Tables"
                 },
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson08/",
+                    "url": "wdd230/lesson08/",
                     "title": "HTML Forms"
                 },
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/form.html",
+                    "url": "form.html",
                     "title": "Form Build"
                 }
             ]
@@ -112,8 +112,12 @@
             "lesson": "09",
             "links": [
                 {
-                    "url": "https://dallinstephens.github.io/wdd230/lesson09/new-ward-members.json",
+                    "url": "lesson09/new-ward-members.json",
                     "title": "JSON File"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets JSON Activity"
                 }
             ]
         },
