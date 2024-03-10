@@ -231,16 +231,12 @@ main h2 {
     text-align: center;
     border-bottom: 2px solid lightgrey;
     padding-top: 40px;
+    font-size: 16px;
 }
 
-h3 {
-    font-size: 1.3rem;
-}
-
-section.card ol li,
 section.card p,
 footer p {
-    font-size: 1.2rem;
+    font-size: 16px;
 }
 
 section.card {
@@ -257,14 +253,27 @@ section.card h3 {
     color: white;
     padding: 15px;
     margin: 0;
+    font-size: 16px;
 }
 
-section.card ol {
+section.card ul {
+    list-style: none;
     background: white;
+    padding: 0 20px;
 }
 
-section.card ol li {
+section.card ul li {
     line-height: 30px;
+    /* References for how to indent from the second line: */
+    /* https://stackoverflow.com/questions/17158253/indent-starting-from-the-second-line-of-a-paragraph-with-css */
+    /* https://jsfiddle.net/ryNJk/ */
+    padding-left: 4.6em;
+    text-indent: -4.6em;
+    font-size: 16px;
+}
+
+section.card ul li a {
+    font-weight: bold;
 }
 
 /* Learning Activities Card */
@@ -272,9 +281,11 @@ section.card:nth-of-type(1) {
     margin-top: 30px;
 }
 
+section #learningActivities {}
+
 /* Reference for link color blue: */
 /* https://stackoverflow.com/questions/4774022/whats-default-html-css-link-color */
-section.card ol li a {
+section.card ul li a {
     color: #0000EE;
 }
 

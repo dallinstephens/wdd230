@@ -103,13 +103,6 @@
         font-size: 20px;
     }
 
-    section.card ol li,
-    section.card a,
-    section.card p,
-    footer p {
-        font-size: 15px;
-    }
-
     /* Reference for bold text: */
     /* https://www.w3schools.com/cssref/pr_font_weight.php */
     section.card a {
