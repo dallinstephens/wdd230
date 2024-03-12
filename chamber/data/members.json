@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Jackman Music",
+            "address": "420 South 425 West, Bountiful, UT 84010",
+            "phone": "801-225-0859",
+            "websiteUrl": "https://jackmanmusic.com/",
+            "imageUrl": "https://yt3.googleusercontent.com/lxUDKIg7lEL-e1-hNO4R2Dd3wFfa0-FWC5OKoIJ4GG1sA-7HwoMDrJfsnzngHto_z0_CxWlG=s900-c-k-c0x00ffffff-no-rj",
+            "membershipLevel": "Gold Membership"
+        },
+        {
+            "name": "Burt Brothers",
+            "address": "2885 S. Main Highway 89, Bountiful, UT 84010",
+            "phone": "801-299-1142",
+            "websiteUrl": "https://burtbrothers.com/locations/bountiful/",
+            "imageUrl": "https://burtbrothers.com/logo-dark.svg",
+            "membershipLevel": "Bronze Membership"
+        },
+        {
+            "name": "Ray's Muffler",
+            "address": "792 South 500 West, Bountiful, UT 84010",
+            "phone": "801-292-4731",
+            "websiteUrl": "https://www.raysmuffler.com/",
+            "imageUrl": "https://www.raysmuffler.com/wp-content/uploads/2017/05/cropped-cropped-16-11-Rays-3D-Logo.png",
+            "membershipLevel": "Silver Membership"
+        },
+        {
+            "name": "Costco",
+            "address": "573 W 100 N, West Bountiful, UT 84010",
+            "phone": "801-299-3940",
+            "websiteUrl": "https://www.costco.com/warehouse-locations/bountiful-w-bountiful-ut-735.html",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Costco_Wholesale_logo_2010-10-26.svg/1280px-Costco_Wholesale_logo_2010-10-26.svg.png",
+            "membershipLevel": "Gold Membership"
+        },
+        {
+            "name": "Mandarin",
+            "address": "348 East 900 North, Bountiful, UT 84010",
+            "phone": "801-298-2406",
+            "websiteUrl": "https://mandarinutah.com/",
+            "imageUrl": "https://mandarinutah.com/wp-content/uploads/2014/10/cropped-mandarin-header-logo-1-300x70.png",
+            "membershipLevel": "Bronze Membership"
+        },
+        {
+            "name": "Smith's Marketplace",
+            "address": "555 S 200 W, Bountiful, UT 84010",
+            "phone": "801-397-7800",
+            "websiteUrl": "https://www.smithsfoodanddrug.com/stores/grocery/ut/bountiful/555-s-200-w-bountiful-ut/706/00444",
+            "imageUrl": "https://cadencenv.com/wp-content/uploads/2021/03/Smiths_Marketplace-logo-2.jpg",
+            "membershipLevel": "Silver Membership"
+        },
+        {
+            "name": "El Matador",
+            "address": "606 S Main St, Bountiful, UT 84010",
+            "phone": "801-292-8998",
+            "websiteUrl": "https://eatelmatador.com/",
+            "imageUrl": "https://d28f3w0x9i80nq.cloudfront.net/restaurantImages/c811b205-97b9-4dec-9900-effb0555ecce/326368236_731116465306902_7300832086927056495_n.png",
+            "membershipLevel": "Bronze Membership"
+        }
+    ]
+}

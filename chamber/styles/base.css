@@ -12,7 +12,7 @@
     --light-grey: #ccc;
     --black: #000000;
     --white: #ffffff;
-    --light-red: #ffcccc;
+    --light-red: #ffe6e6;
     --lora: 'Lora', serif;
 }
 
@@ -699,5 +699,104 @@ main.joinPage section.benefits:nth-of-type(1) {
 }
 
 main.joinPage {
+    padding-bottom: 0;
+}
+
+/* SPECIFIC STYLING FOR DIRECTORY PAGE */
+div#gridListButtonsContainer {
+    /* Reference for color picker: */
+    /* https://www.w3schools.com/colors/colors_picker.asp */
+    background-color: var(--light-grey);
+    margin: 0 20px;
+    text-align: center;
+}
+
+div#gridListButtonsContainer button {
+    background-color: var(--dark-red);
+    color: var(--white);
+    margin: 20px 4px;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+div#gridListButtonsContainer button:hover {
+    outline: 2px solid var(--dark-grey);
+}
+
+div.grid {
+    /* Reference for example for grid, repeat, auto-fit, and minmax: */
+    /* https://codepen.io/blazzard-jason/pen/MWYJjmG */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 10px;
+}
+
+div.grid section.member {
+    /* References for how to create a polaroid card using box-shadow: */
+    /* https://www.w3schools.com/howto/howto_css_cards.asp */
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.9);
+    margin: 10px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+div.grid section .memberName {
+    display: none;
+}
+
+div.list {
+    margin-bottom: 20px;
+}
+
+div.list section {
+    /* Reference for display:display and flex and flex-direction: column: */
+    /* https://codepen.io/blazzard-jason/pen/QWOYzgV */
+    margin: 0 20px;
+    padding: 20px;
+    line-height: 25px;
+}
+
+div.list section img {
+    display: none;
+}
+
+div.list section .memberName {
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+div.list section .membershipLevel {
+    margin-bottom: 5px;
+}
+
+/* div#membersContainer is used because link blue color in grid and list views */
+div#membersContainer section .memberWebsite {
+    /* Reference for link blue color: */
+    /* https://echoecho.com/htmllinks02.htm#:~:text=link%20%2D%20standard%20link%20%2D%20to%20a,is%20blue%20%2D%20%230000FF). */
+    color: #0000FF;
+    font-weight: bold;
+}
+
+div.list section:nth-child(odd) {
+    /* Reference for zebra coloring: */
+    /* https://codepen.io/blazzard-jason/pen/QWOYzgV */
+    background-color: var(--light-red);
+}
+
+div.list section:nth-child(even) {
+    /* Reference for zebra coloring: */
+    /* https://codepen.io/blazzard-jason/pen/QWOYzgV */
+    /* Reference for color picker */
+    /* https://www.w3schools.com/colors/colors_picker.asp */
+    background-color: #eee;
+}
+
+main.directory {
     padding-bottom: 0;
 }

@@ -27,4 +27,18 @@
     .heroLabel p:nth-of-type(2) {
         display: none;
     }
+
+    /* STYLING FOR DIRECTORY PAGE */
+    div#gridListButtonsContainer.gridViewButtonsContainer {
+        margin: 0 85px;
+    }
+
+    div.grid {
+        margin: 10px 75px;
+    }
+
+    div.listViewButtonsContainer {
+        margin: 0 20px;
+    }
+
 }
