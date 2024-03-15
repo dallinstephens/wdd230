@@ -61,6 +61,7 @@ header h1 {
     /* https://blog.hubspot.com/website/remove-underline-from-links-css */
     text-decoration: none;
     text-align: center;
+    color: #fff;
 }
 
 #menu::before {
