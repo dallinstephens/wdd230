@@ -33,13 +33,16 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    // Reference to output zero decimal places using toFixed(): https://www.w3schools.com/jsref/jsref_tofixed.asp
+    currentTemp.innerHTML = `${data.main.temp.toFixed()}&deg;F`;
     const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     let desc = data.weather[0].description;
     // Reference to capitalize each word:
-    // https://www.w3schools.com/jsref/jsref_touppercase.asp
-    desc = desc.toUpperCase();    
+    // https://www.w3schools.com/jsref/jsref_touppercase.asp  
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
+    // Reference to capitalize each word in the description:
+    // https://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
+    captionDesc.style.textTransform = 'capitalize';
 }
