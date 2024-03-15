@@ -99,8 +99,9 @@
             <!-- https://www.toptal.com/designers/htmlarrows/math/degree-sign/ -->
             <!-- Reference for partly cloudy symbol: -->
             <!-- https://www.shecodes.io/athena/53075-how-to-display-a-sun-behind-a-cloud-emoji-in-code -->
-            <p>&#x26c5;36&deg;C - Low: 16&deg;C</p>
-            <p>Fair - Chance of Rain: 10%</p>
+            <p class="weatherContainer"><img id="weatherIcon" src="" alt=""> <span id="currentTemp"></span><span
+                    id="description"></span>
+            </p>
             <p>Page Visits: <span class="visits"></span></p>
         </section>
         <iframe
@@ -121,6 +122,7 @@
     <script src="scripts/toggle-menu.js"></script>
     <script src="scripts/page-visit-counter.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>

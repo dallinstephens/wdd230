@@ -311,6 +311,17 @@ section.card p {
     padding: 0 10px;
 }
 
+section.card p.weatherContainer {
+    /* Reference on how to horizontally and vertically center elements using display: flex, justify-content: center, and align-items: center */
+    /* https://www.tutorialrepublic.com/faq/how-to-center-a-div-horizontally-and-vertically-using-flexbox-in-css.php#:~:text=Answer%3A%20Use%20CSS%20justify%2Dcontent,div%3E%20using%20flexbox%20in%20CSS. */
+    display: flex;
+    /* horizontally centers elements */
+    justify-content: center;
+    /* vertically centers elements */
+    align-items: center;
+
+}
+
 /* Google Map of Bountiful */
 iframe {
     width: 93%;
