@@ -285,22 +285,22 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    main #section5 div #temperatureContainer {
+    main #section5 div .imageGallery {
         grid-row: 1 / 2;
         grid-column: 1 / 2;
     }
 
-    main #section5 div #weatherConditionContainer {
+    main #section5 div .weatherConditionContainer {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
     }
 
-    main #section5 div #windSpeedContainer {
+    main #section5 div .windSpeedContainer {
         grid-row: 1 / 2;
         grid-column: 2 / 3;
     }
 
-    main #section5 div #windChillContainer {
+    main #section5 div .windChillContainer {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
     }

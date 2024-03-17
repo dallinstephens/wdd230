@@ -45,6 +45,14 @@
 </head>
 
 <body>
+    <!-- Reference for X close icon: -->
+    <!-- https://stackoverflow.com/questions/5353461/unicode-character-for-x-cancel-close -->
+    <div class="banner">
+        <div class="meetAndGreet">All Visitors Welcome!<br>Attend the chamber of commerce meet and greet Wednesday at
+            7:00
+            pm.</div>
+        <div id="closeBanner">&#10006;</div>
+    </div>
     <header>
         <img src="images/bountiful-chamber-logo.webp" alt="Bountiful Chamber of Commerce Logo" width="200" height="200">
         <h1>Bountiful<br>Chamber of Commerce</h1>
@@ -180,26 +188,38 @@
 
         <!-- Section 5 -->
         <div id="section5">
-            <h3>Weather
-            </h3>
+            <h3>Bountiful Weather</h3>
             <div>
-                <!-- Reference for weather symbols: -->
-                <!-- https://www.alt-codes.net/weather-symbols.php -->
-                <div id="weatherConditionContainer"><span id="weatherCondition">&#x26C5;Partly Cloudy</span></div>
-                <div id="temperatureContainer"><label>Temperature: <input id="temperature"><span>&deg;F</span></label>
+                <div class="temperatureContainer"><span id="currentTemp"></span><span>&deg;F&nbsp;</span>
                 </div>
-                <div id="windSpeedContainer"><label>Wind Speed: <input id="windSpeed"><span>mph</span></label></div>
+                <div class="weatherConditionContainer"><img id="weatherIcon" src="#"
+                        alt="weather description placeholder"><span id="description"></span></div>
+                <div class="windSpeedContainer">Wind Speed:&nbsp;<span id="windSpeed"></span>&nbsp;<span>mph</span>
+                </div>
                 <!-- Reference for input readonly: https://www.w3schools.com/tags/att_input_readonly.asp -->
-                <div id="windChillContainer"><label>Wind Chill: <input id="windChill"
-                            readonly><span>&deg;F</span></label></div>
+                <div class="windChillContainer">Wind Chill:&nbsp;<span id="windChill"></span></div>
             </div>
-            <h4><a href="">&#9788; Mon</a></h4>
-            <h4><a href="">&#9729; Tue</a></h4>
-            <h4><a href="">&#9730; Wed</a></h4>
-            <h4><a href="">&#9730; Thu</a></h4>
-            <h4><a href="">&#9784; Fri</a></h4>
-            <h4><a href="">&#9788; Sat</a></h4>
-            <h4><a href="">&#9729; Sun</a></h4>
+            <h4><span id="firstDay"></span><span id="firstDayTemp"></span><img id="firstDayWeatherIcon" src="#"
+                    alt="weather description placeholder"><span id="firstDayDesc"></span>
+            </h4>
+            <h4><span id="secondDay"></span><span id="secondDayTemp"></span><img id="secondDayWeatherIcon" src="#"
+                    alt="weather description placeholder"><span id="secondDayDesc"></span>
+            </h4>
+            <h4><span id="thirdDay"></span><span id="thirdDayTemp"></span><img id="thirdDayWeatherIcon" src="#"
+                    alt="weather description placeholder"><span id="thirdDayDesc"></span>
+            </h4>
+            <h4><span id="fourthDay"></span><span id="fourthDayTemp"></span><img id="fourthDayWeatherIcon" src="#"
+                    alt="weather description placeholder"><span id="fourthDayDesc"></span>
+            </h4>
+            <h4><span id="fifthDay"></span><span id="fifthDayTemp"></span><img id="fifthDayWeatherIcon" src="#"
+                    alt="weather description placeholder"><span id="fifthDayDesc"></span>
+            </h4>
+            <h4><span id="sixthDay"></span><span id="sixthDayTemp"></span><img id="sixthDayWeatherIcon" src="#"
+                    alt="weather description placeholder"><span id="sixthDayDesc"></span>
+            </h4>
+            <h4><span id="seventhDay"></span><span id="seventhDayTemp"></span><img id="seventhDayWeatherIcon" src="#"
+                    alt="weather description placeholder"><span id="seventhDayDesc"></span>
+            </h4>
         </div>
         <!-- Weather symbols: &#9728;&#9729;&#9730;&#9731;&#9784;&#9788; -->
     </main>
@@ -225,7 +245,8 @@
     <script src="scripts/toggle-menu.js"></script>
     <script src="scripts/get-dates.js"></script>
     <script src="scripts/toggle-dark-light-mode.js"></script>
-    <script src="scripts/wind-chill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner-meet-greet.js"></script>
 </body>
 
 </html>
