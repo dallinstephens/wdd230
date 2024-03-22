@@ -101,6 +101,11 @@ header p {
     display: none;
 }
 
+header p a {
+    text-decoration: none;
+    color: var(--white);
+}
+
 #menuHeader {
     position: relative;
     background-color: var(--dark-red);
@@ -219,12 +224,8 @@ nav ul li {
     background-color: var(--dark-grey);
 }
 
-nav ul li:hover {
-    border: 2px solid var(--white);
-    background-color: var(--light-grey);
-}
-
 nav ul li:hover a {
+    background-color: var(--light-grey);
     color: var(--black);
 }
 
@@ -522,6 +523,11 @@ footer {
     padding: 20px;
 }
 
+footer p a {
+    text-decoration: none;
+    color: var(--white);
+}
+
 /* Specific styling for Discover Page */
 main.discoverPage {
     padding: 0;
@@ -740,6 +746,29 @@ main.joinPage section.benefits h3 {
     border: 1px solid var(--dark-red);
     padding: 0.5rem;
     margin-top: 0;
+}
+
+main.joinPage section.benefits figure {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+main.joinPage section.benefits img {
+    width: 100%;
+    height: auto;
+}
+
+main.joinPage section.benefits a {
+    color: #0000FF;
+}
+
+main.joinPage section.benefits h4 {
+    margin-bottom: 0;
+}
+
+main.joinPage section.benefits p {
+    margin-top: 5px;
 }
 
 main.joinPage #joinForm fieldset:nth-of-type(1),

@@ -8,7 +8,7 @@
 // https://byui-cse.github.io/wdd230-course/lesson05/aa-chamber-home-05.html
 // https://codepen.io/blazzard-jason/pen/ZERawEQ
 const sliderElem = document.querySelector('.slider');
-sliderElem.setAttribute('content-before', '🌙'); // This sets the initial value to moon.
+sliderElem.setAttribute('content-before', '🌞'); // This sets the initial value to sun.
 
 const header = document.querySelector('header');
 const memberButton = document.querySelector('main #section1 span button');
@@ -27,8 +27,8 @@ const footer = document.querySelector('footer');
 const html = document.querySelector('html');
 
 sliderElem.addEventListener('click', function (event) {
-	if (event.target.getAttribute('content-before') == '🌙') {
-    	event.target.setAttribute('content-before', '🌞');
+	if (event.target.getAttribute('content-before') == '🌞') {
+    	event.target.setAttribute('content-before', '🌙');
         event.target.style.backgroundColor = 'var(--black)';
         header.style.backgroundColor = 'var(--black)';
         memberButton.style.backgroundColor = 'var(--black)';
@@ -65,7 +65,7 @@ sliderElem.addEventListener('click', function (event) {
         html.style.backgroundColor = 'var(--dark-grey)';
     }
     else {
-    	event.target.setAttribute('content-before', '🌙');
+    	event.target.setAttribute('content-before', '🌞');
         event.target.style.backgroundColor = 'var(--dark-grey)';
         header.style.backgroundColor = 'var(--dark-grey)';
         memberButton.style.backgroundColor = 'var(--white)';
@@ -73,7 +73,7 @@ sliderElem.addEventListener('click', function (event) {
         memberButton.style.border = '5px double var(--dark-red)';
         for (let i = 0; i < navLi.length; i++) {
             navLi[i].style.borderColor = 'var(--dark-grey)';
-            navLi[i].style.backgroundColor = 'var(--dark-grey)';  
+            navLi[i].style.backgroundColor = 'var(--dark-grey)';           
         }
         main.style.backgroundColor = 'var(--white)';
         main.style.color = 'var(--black)';
