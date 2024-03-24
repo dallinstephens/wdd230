@@ -54,7 +54,7 @@
         <div id="closeBanner">&#10006;</div>
     </div>
     <header>
-        <img src="images/bountiful-chamber-logo.webp" alt="Bountiful Chamber of Commerce Logo" width="200" height="200">
+        <img src="images/bountiful-chamber-logo.webp" alt="Bountiful Chamber of Commerce Logo">
         <h1>Bountiful<br>Chamber of Commerce</h1>
         <!-- Reference for contact information (Bountiful Library): -->
         <!-- https://library.utah.gov/directory/listing/south-branch-library-bountiful/ -->
@@ -105,18 +105,19 @@
             <!-- https://burkeholland.gitbook.io/vs-code-can-do-that/exercise-2-productivity-tricks/update-image-sizes -->
 
             <picture>
-                <source media="(max-width: 639px)" srcset="images/hero-small.webp" width="370" height="268">
-                <source media="(max-width: 999px)" srcset="images/hero-medium.webp" width="453" height="350">
-                <img src="images/hero-large.webp" alt="Individuals meeting" width="640" height="426">
+                <source media="(max-width: 639px)" srcset="images/bountiful-city-small.webp">
+                <source media="(max-width: 999px)" srcset="images/bountiful-city-medium.webp">
+                <img src="images/bountiful-city-large.webp" alt="Individuals meeting">
             </picture>
             <div class="heroLabel">
                 <!-- Reference on how to show small, medium and large: -->
                 <!-- https://stackoverflow.com/questions/37108597/how-to-change-dom-elements-using-javascript-depending-on-the-screen-size-of-a -->
+                <!-- Small -->
                 <p>Small</p>
                 <p>Medium</p>
                 <p>Large</p>
             </div>
-            <span><button>BECOME A MEMBER</button></span>
+            <span><button><a href="../chamber/join.html">BECOME A MEMBER</a></button></span>
             <p>The Bountiful Chamber of Commerce helps provide networking for small businesses, helps create jobs for
                 families and individuals, provides local news and the weather, and informs about local events in the
                 area.</p>
@@ -125,12 +126,12 @@
         <!-- Section 2 -->
         <div id="section2">
             <!-- Art museum image attribution: https://unsplash.com/photos/assorted-picture-frames-on-wall-acowe0pCVBg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
-            <img src="images/art-museum.webp" alt="Art museum" width="640" height="427">
+            <img src="images/art-museum.webp" alt="Art museum" loading="lazy">
             <div>
                 <h3>Events Soon to Come</h3>
                 <!-- Reference for calendar symbol: -->
                 <!-- https://www.compart.com/en/unicode/U+1F4C5 -->
-                <button><span>&#128197; </span>View Calendar</button>
+                <button><a href="../chamber/join.html"><span>&#128197; </span>View Events</a></button>
             </div>
         </div>
 
@@ -152,9 +153,9 @@
 
         <!-- Section 4 -->
         <div id="section4">
-            <button>Learn more about the team</button>
+            <button><a href="../chamber/directory.html">Learn more about the team</a></button>
             <!-- Attribution for image: https://unsplash.com/photos/people-sitting-on-chair-in-front-of-laptop-computers-rMILC1PIwM0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
-            <img src="images/team.webp" alt="Team" width="640" height="414">
+            <img src="images/team.webp" alt="Team" loading="lazy">
 
             <h2>Member Spotlights</h2>
             <div class="spotlight">
@@ -200,25 +201,25 @@
                 <div class="windChillContainer">Wind Chill:&nbsp;<span id="windChill"></span></div>
             </div>
             <h4><span id="firstDay"></span><span id="firstDayTemp"></span><img id="firstDayWeatherIcon" src="#"
-                    alt="weather description placeholder"><span id="firstDayDesc"></span>
+                    alt="first day weather description placeholder"><span id="firstDayDesc"></span>
             </h4>
             <h4><span id="secondDay"></span><span id="secondDayTemp"></span><img id="secondDayWeatherIcon" src="#"
-                    alt="weather description placeholder"><span id="secondDayDesc"></span>
+                    alt="second day weather description placeholder"><span id="secondDayDesc"></span>
             </h4>
             <h4><span id="thirdDay"></span><span id="thirdDayTemp"></span><img id="thirdDayWeatherIcon" src="#"
-                    alt="weather description placeholder"><span id="thirdDayDesc"></span>
+                    alt="third day weather description placeholder"><span id="thirdDayDesc"></span>
             </h4>
             <h4><span id="fourthDay"></span><span id="fourthDayTemp"></span><img id="fourthDayWeatherIcon" src="#"
-                    alt="weather description placeholder"><span id="fourthDayDesc"></span>
+                    alt="fourth day weather description placeholder"><span id="fourthDayDesc"></span>
             </h4>
             <h4><span id="fifthDay"></span><span id="fifthDayTemp"></span><img id="fifthDayWeatherIcon" src="#"
-                    alt="weather description placeholder"><span id="fifthDayDesc"></span>
+                    alt="fifth day weather description placeholder"><span id="fifthDayDesc"></span>
             </h4>
             <h4><span id="sixthDay"></span><span id="sixthDayTemp"></span><img id="sixthDayWeatherIcon" src="#"
-                    alt="weather description placeholder"><span id="sixthDayDesc"></span>
+                    alt="sixth day weather description placeholder"><span id="sixthDayDesc"></span>
             </h4>
             <h4><span id="seventhDay"></span><span id="seventhDayTemp"></span><img id="seventhDayWeatherIcon" src="#"
-                    alt="weather description placeholder"><span id="seventhDayDesc"></span>
+                    alt="seventh day weather description placeholder"><span id="seventhDayDesc"></span>
             </h4>
         </div>
         <!-- Weather symbols: &#9728;&#9729;&#9730;&#9731;&#9784;&#9788; -->

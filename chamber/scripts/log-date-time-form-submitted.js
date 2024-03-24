@@ -8,5 +8,5 @@ const dateAndTimeWhenFormSubmitted = document.querySelector("#dateAndTimeWhenFor
 
 joinForm.addEventListener("submit", function() {
     dateAndTimeWhenFormSubmitted.value = Date.now();
-    console.log(dateAndTimeWhenFormSubmitted.value);
+    // console.log(dateAndTimeWhenFormSubmitted.value);
 });

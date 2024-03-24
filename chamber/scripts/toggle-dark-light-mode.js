@@ -12,6 +12,7 @@ sliderElem.setAttribute('content-before', '🌞'); // This sets the initial valu
 
 const header = document.querySelector('header');
 const memberButton = document.querySelector('main #section1 span button');
+const memberButtonLink = document.querySelector('main #section1 span button a');
 // Reference on how to change all nav ul li elements:
 // https://stackoverflow.com/questions/68322315/queryselectorall-elements-not-changing-color-of-selected-classes
 const navLi = document.querySelectorAll('li');
@@ -19,6 +20,7 @@ const main = document.querySelector('main');
 const heroLabel = document.querySelector('.heroLabel');
 const section2Div = document.querySelector('#section2 div');
 const section4Button = document.querySelector('#section4 button');
+const section4ButtonLink = document.querySelector('#section4 button a');
 const spotlightH3 = document.querySelectorAll('.spotlight h3');
 const spotlightParagraphs = document.querySelectorAll('.spotlight p');
 const weatherSection = document.querySelector('#section5');
@@ -32,8 +34,8 @@ sliderElem.addEventListener('click', function (event) {
         event.target.style.backgroundColor = 'var(--black)';
         header.style.backgroundColor = 'var(--black)';
         memberButton.style.backgroundColor = 'var(--black)';
-        memberButton.style.color = 'var(--white)';
         memberButton.style.border = '5px solid var(--white)';
+        memberButtonLink.style.color = 'var(--white)';
         for (let i = 0; i < navLi.length; i++) {
             navLi[i].style.borderColor = 'var(--black)';
             navLi[i].style.backgroundColor = 'var(--black)';
@@ -44,7 +46,7 @@ sliderElem.addEventListener('click', function (event) {
         section2Div.style.backgroundColor = 'var(--black)';
         section4Button.style.borderColor = 'var(--white)';
         section4Button.style.backgroundColor = 'var(--dark-red)';
-        section4Button.style.color = 'var(--white)';
+        section4ButtonLink.style.color = 'var(--white)';
         // References on how to add border on only one side:
         // https://stackoverflow.com/questions/12671898/outline-on-only-one-border
         // https://www.w3schools.com/cssref/css3_pr_box-shadow.php
@@ -69,8 +71,8 @@ sliderElem.addEventListener('click', function (event) {
         event.target.style.backgroundColor = 'var(--dark-grey)';
         header.style.backgroundColor = 'var(--dark-grey)';
         memberButton.style.backgroundColor = 'var(--white)';
-        memberButton.style.color = 'var(--black)';
         memberButton.style.border = '5px double var(--dark-red)';
+        memberButtonLink.style.color = 'var(--black)';
         for (let i = 0; i < navLi.length; i++) {
             navLi[i].style.borderColor = 'var(--dark-grey)';
             navLi[i].style.backgroundColor = 'var(--dark-grey)';           
@@ -81,7 +83,7 @@ sliderElem.addEventListener('click', function (event) {
         section2Div.style.backgroundColor = 'var(--dark-grey)';
         section4Button.style.borderColor = 'var(--dark-red)';
         section4Button.style.backgroundColor = 'var(--white)';
-        section4Button.style.color = 'var(--black)';        
+        section4ButtonLink.style.color = 'var(--black)';        
         for (let i = 0; i < spotlightH3.length; i++) {
             spotlightH3[i].style.boxShadow = 'none';
         }

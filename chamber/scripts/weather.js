@@ -24,7 +24,7 @@ async function apiFetchWeather() {
         const response = await fetch(weatherUrl);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayWeatherResults(data);
         }
         else {
@@ -32,7 +32,7 @@ async function apiFetchWeather() {
         }
     }
     catch (error) {
-        console.log(error);
+        // console.log(error);
     }
 }
 
@@ -72,8 +72,8 @@ function displayWeatherResults(data) {
 // https://sciencing.com/types-oldfashioned-weather-instruments-6849423.html
 // https://www.weather.gov/media/ajk/brochures/Wind_Chill_Temperature_Index.pdf
 function CalculateWindChillIndex(airTemperature, windSpeed) {
-    console.log(airTemperature);
-    console.log(windSpeed);
+    // console.log(airTemperature);
+    // console.log(windSpeed);
     let windChillIndex = 35.74 + 0.6215 * airTemperature - 35.75 * windSpeed ** 0.16 + 0.4275 * airTemperature * windSpeed ** 0.16;
 
     // Reference for when wind chill is not calculated:
@@ -122,7 +122,7 @@ async function apiFetchForecast() {
         const response = await fetch(forecastUrl);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayForecastResults(data);
         }
         else {
@@ -130,7 +130,7 @@ async function apiFetchForecast() {
         }
     }
     catch (error) {
-        console.log(error);
+        // console.log(error);
     }
 }
 

@@ -172,14 +172,18 @@
         font-size: 30px;
     }
 
+    /* View Events button */
     main #section2 div button {
         position: absolute;
         top: 60%;
-        font-size: 25px;
         left: 0;
         right: 0;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    main #section2 div button a {
+        font-size: 25px;
     }
 
     /* Section 3 */

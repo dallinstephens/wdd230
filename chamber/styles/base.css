@@ -263,6 +263,8 @@ main #section1 img {
 }
 
 .heroLabel {
+    /* Remove display: none; if you want a label in different views. */
+    display: none;
     position: absolute;
     top: 10vw;
     margin-left: 25vw;
@@ -300,14 +302,19 @@ main #section1 span {
     text-align: center;
 }
 
+/* Become a Member Button */
 main #section1 button {
-    font-family: var(--lora);
     border-radius: 5px;
     background-color: var(--white);
+    border: 5px double var(--dark-red);
+}
+
+main #section1 button a {
+    text-decoration: none;
+    font-family: var(--lora);
     color: var(--black);
     font-size: 20px;
     font-weight: bold;
-    border: 5px double var(--dark-red);
 }
 
 main #section1 p {
@@ -340,13 +347,18 @@ main #section2 div h3 {
     justify-self: center;
 }
 
+/* View Events button */
 main #section2 div button {
     padding: 5px;
-    font-size: 15px;
     background-color: var(--dark-red);
-    color: var(--white);
     border-radius: 5px;
     outline: 2px solid var(--white);
+}
+
+main #section2 div button a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--white);
 }
 
 /* Section 3 */
@@ -389,13 +401,18 @@ main #section4 {
     margin-bottom: 100px;
 }
 
+/* Learn more about the Team button */
 main #section4 button {
     border: 5px solid var(--dark-red);
-    color: var(--black);
     border-radius: 10px;
-    font-size: 30px;
     text-align: center;
     margin-bottom: 10px;
+}
+
+main #section4 button a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 30px;
 }
 
 main #section4 img {
@@ -559,8 +576,6 @@ span#visitMessage {
     border: 5px double var(--dark-red);
     background-color: var(--light-grey);
     padding: 10px;
-    /* Reference for blue link color: */
-    /* https://stackoverflow.com/questions/4774022/whats-default-html-css-link-color */
     color: var(--black);
     font-weight: bold;
 }
@@ -858,7 +873,6 @@ div#membersContainer section .memberWebsite {
     /* Reference for link blue color: */
     /* https://echoecho.com/htmllinks02.htm#:~:text=link%20%2D%20standard%20link%20%2D%20to%20a,is%20blue%20%2D%20%230000FF). */
     color: #0000FF;
-    font-weight: bold;
 }
 
 div.list section:nth-child(odd) {
