@@ -104,11 +104,15 @@
             <!-- Reference for auto updating image size using emmet in visual studio code: -->
             <!-- https://burkeholland.gitbook.io/vs-code-can-do-that/exercise-2-productivity-tricks/update-image-sizes -->
 
-            <picture>
-                <source media="(max-width: 639px)" srcset="images/bountiful-city-small.webp">
-                <source media="(max-width: 999px)" srcset="images/bountiful-city-medium.webp">
-                <img src="images/bountiful-city-large.webp" alt="Individuals meeting">
-            </picture>
+            <figure class="reference">
+                <picture>
+                    <source media="(max-width: 639px)" srcset="images/bountiful-city-small.webp">
+                    <source media="(max-width: 999px)" srcset="images/bountiful-city-medium.webp">
+                    <img src="images/bountiful-city-large.webp" alt="Individuals meeting">
+                </picture>
+                <figcaption>(<a href="www.flickr.com">www.flickr.com</a>, 2009)</figcaption>
+            </figure>
+
             <div class="heroLabel">
                 <!-- Reference on how to show small, medium and large: -->
                 <!-- https://stackoverflow.com/questions/37108597/how-to-change-dom-elements-using-javascript-depending-on-the-screen-size-of-a -->
@@ -128,7 +132,10 @@
         <!-- Section 2 -->
         <div id="section2">
             <!-- Art museum image attribution: https://unsplash.com/photos/assorted-picture-frames-on-wall-acowe0pCVBg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
-            <img src="images/art-museum.webp" alt="Art museum" loading="lazy">
+            <figure class="reference">
+                <img src="images/art-museum.webp" alt="Art museum" loading="lazy">
+                <figcaption>(<a href="https://unsplash.com">https://unsplash.com</a>, 2019)</figcaption>
+            </figure>
             <div>
                 <h3>Events Soon to Come</h3>
                 <!-- Reference for calendar symbol: -->
@@ -157,7 +164,10 @@
         <div id="section4">
             <button onclick="location.href='../chamber/directory.html'">Learn more about the team</button>
             <!-- Attribution for image: https://unsplash.com/photos/people-sitting-on-chair-in-front-of-laptop-computers-rMILC1PIwM0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
-            <img src="images/team.webp" alt="Team" loading="lazy">
+            <figure class="reference">
+                <img src="images/team.webp" alt="Team" loading="lazy">
+                <figcaption>(<a href="https://unsplash.com">https://unsplash.com</a>, 2020)</figcaption>
+            </figure>
 
             <h2>Member Spotlights</h2>
             <div class="spotlight">

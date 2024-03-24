@@ -247,7 +247,7 @@ main {
 
 /* Section 1 */
 main #section1 {
-    position: relative;
+    margin: 0 20px;
 }
 
 main h2:nth-of-type(1) {
@@ -255,6 +255,31 @@ main h2:nth-of-type(1) {
     margin-top: auto;
     margin-bottom: auto;
     padding: 15px;
+}
+
+/* Reference for figure tag: */
+/* https://www.w3schools.com/tags/tag_figure.asp */
+figure.reference {
+    position: relative;
+    margin: 0;
+}
+
+figure.reference figcaption {
+    position: absolute;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    bottom: 15px;
+    /* Reference for how to make block transparent but not text inself: */
+    /* https://stackoverflow.com/questions/15449280/making-text-background-transparent-but-not-text-itself */
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5px;
+    color: var(--white);
+}
+
+figure.reference figcaption a {
+    color: var(--white);
 }
 
 main #section1 img {
@@ -314,11 +339,14 @@ main #section1 button {
 }
 
 main #section1 p {
-    padding: 0 20px;
     line-height: 30px;
 }
 
 /* Section 2 */
+main #section2 {
+    margin: 0 20px;
+}
+
 /* Arts museum image */
 main #section2 img {
     width: 100%;
@@ -390,7 +418,7 @@ main #section3 .circle span:nth-of-type(2) {
 /* Learn more about the team button */
 main #section4 {
     text-align: center;
-    margin-bottom: 100px;
+    margin: 0 20px 100px 20px;
 }
 
 /* Learn more about the Team button */
@@ -412,8 +440,8 @@ main #section4 h2 {
     margin-top: 100px;
 }
 
-main #section4 .spotlight {
-    margin: 0 20px;
+main #section4 .spotlight h3 {
+    margin-top: 0;
 }
 
 main #section4 .spotlight h3 {
