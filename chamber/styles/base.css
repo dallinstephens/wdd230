@@ -307,10 +307,6 @@ main #section1 button {
     border-radius: 5px;
     background-color: var(--white);
     border: 5px double var(--dark-red);
-}
-
-main #section1 button a {
-    text-decoration: none;
     font-family: var(--lora);
     color: var(--black);
     font-size: 20px;
@@ -353,10 +349,6 @@ main #section2 div button {
     background-color: var(--dark-red);
     border-radius: 5px;
     outline: 2px solid var(--white);
-}
-
-main #section2 div button a {
-    text-decoration: none;
     font-size: 15px;
     color: var(--white);
 }
@@ -407,10 +399,6 @@ main #section4 button {
     border-radius: 10px;
     text-align: center;
     margin-bottom: 10px;
-}
-
-main #section4 button a {
-    text-decoration: none;
     color: var(--black);
     font-size: 30px;
 }
