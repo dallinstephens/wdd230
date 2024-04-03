@@ -241,6 +241,17 @@ nav ul li a {
     padding: 10px;
 }
 
+nav ul li a.active {
+    background-color: yellow;
+    color: var(--black);
+}
+
+/* Reference for how to get windows emoji: */
+/* https://byui-cse.github.io/wdd230-course/lesson03/aa-course-homepage-03.html */
+/* Windows key plus . */
+/* Reference for how to position pseudo element content: */
+/* https://stackoverflow.com/questions/23566624/before-pseudo-element-without-moving-actual-content */
+
 main {
     padding-bottom: 100px;
 }
@@ -457,11 +468,10 @@ main #section4 .spotlight h3 {
     margin-bottom: 0;
 }
 
-main #section4 .spotlight p {
+main #section4 .spotlight>div {
     width: 100%;
-    height: 150px;
+    height: 180px;
     line-height: 25px;
-    background-color: var(--light-grey);
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -469,6 +479,37 @@ main #section4 .spotlight p {
     font-weight: bold;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+main #section4 #spotlight1.lightMode>div,
+main #section4 #spotlight2.lightMode>div,
+main #section4 #spotlight3.lightMode>div {
+    background-color: var(--light-grey);
+    color: var(--black);
+    outline: none;
+}
+
+main #section4 #spotlight1.darkMode>div,
+main #section4 #spotlight2.darkMode>div,
+main #section4 #spotlight3.darkMode>div {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    outline: 1px solid var(--white);
+}
+
+main #section4 .spotlight div img {
+    height: 50px;
+    width: auto;
+}
+
+main #section4 .lightMode a {
+    /* Reference for hyperlink blue color: */
+    /* https://stackoverflow.com/questions/4774022/whats-default-html-css-link-color */
+    color: #0000ee;
+}
+
+main #section4 .darkMode a {
+    color: var(--white);
 }
 
 /* Section 5 */
@@ -585,7 +626,14 @@ span#visitMessage {
     padding: 10px;
 }
 
-.sidebarContent a {
+/* .reference2 cite is defined below, but adding .sidebarContent before it makes it more specific for the width. */
+.sidebarContent .reference2 cite {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.sidebarContent>a {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -628,6 +676,30 @@ span#visitMessage {
 
 .calendar p {
     line-height: 50px;
+}
+
+.reference2 {
+    position: relative;
+    margin: 0;
+}
+
+.reference2 cite {
+    position: absolute;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    bottom: 60px;
+    /* Reference for how to make block transparent but not text inself: */
+    /* https://stackoverflow.com/questions/15449280/making-text-background-transparent-but-not-text-itself */
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5px;
+    color: var(--white);
+    font-style: normal;
+}
+
+.reference2 cite a {
+    color: var(--white);
 }
 
 .imageGallery figure {
@@ -906,5 +978,26 @@ div.list section:nth-child(even) {
 }
 
 main.directory {
+    padding-bottom: 0;
+}
+
+/* Attribution Page */
+main.attribution h3 {
+    background-color: var(--light-grey);
+    padding: 10px;
+    margin: 0 20px;
+}
+
+main.attribution li {
+    line-height: 30px;
+}
+
+main.attribution li a {
+    /* Reference for hyperlink blue color: */
+    /* https://stackoverflow.com/questions/4774022/whats-default-html-css-link-color */
+    color: #0000ee;
+}
+
+main.attribution {
     padding-bottom: 0;
 }

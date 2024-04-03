@@ -20,7 +20,10 @@ const heroLabel = document.querySelector('.heroLabel');
 const section2Div = document.querySelector('#section2 div');
 const section4Button = document.querySelector('#section4 button');
 const spotlightH3 = document.querySelectorAll('.spotlight h3');
-const spotlightParagraphs = document.querySelectorAll('.spotlight p');
+// These spotlights are already declared in the spotlight.js file:
+// const spotlight1 = document.querySelector("#spotlight1");
+// const spotlight2 = document.querySelector("#spotlight2");
+// const spotlight3 = document.querySelector("#spotlight3");
 const weatherSection = document.querySelector('#section5');
 const weatherSectionH4 = document.querySelectorAll('main div#section5 h4');
 const footer = document.querySelector('footer');
@@ -50,12 +53,13 @@ sliderElem.addEventListener('click', function (event) {
         // https://www.w3schools.com/cssref/css3_pr_box-shadow.php
         for (let i = 0; i < spotlightH3.length; i++) {
             spotlightH3[i].style.boxShadow = '-1px -1px 0 var(--white), 1px 0 var(--white)';
-        }
-        for (let i = 0; i < spotlightParagraphs.length; i++) {
-            spotlightParagraphs[i].style.backgroundColor = 'var(--black)';
-            spotlightParagraphs[i].style.color = 'var(--white)';
-            spotlightParagraphs[i].style.outline = '1px solid var(--white)';
-        }
+        }     
+        spotlight1.classList.add("darkMode");
+        spotlight1.classList.remove("lightMode");
+        spotlight2.classList.add("darkMode");
+        spotlight2.classList.remove("lightMode");
+        spotlight3.classList.add("darkMode");
+        spotlight3.classList.remove("lightMode");
         weatherSection.style.backgroundColor = 'var(--black)';
         weatherSection.style.borderColor = 'var(--white)';
         for (let i = 0; i < weatherSectionH4.length; i++) {
@@ -85,11 +89,12 @@ sliderElem.addEventListener('click', function (event) {
         for (let i = 0; i < spotlightH3.length; i++) {
             spotlightH3[i].style.boxShadow = 'none';
         }
-        for (let i = 0; i < spotlightParagraphs.length; i++) {
-            spotlightParagraphs[i].style.backgroundColor = 'var(--light-grey)';
-            spotlightParagraphs[i].style.color = 'var(--black)';
-            spotlightParagraphs[i].style.outline = 'none';
-        }
+        spotlight1.classList.add("lightMode");
+        spotlight1.classList.remove("darkMode");
+        spotlight2.classList.add("lightMode");
+        spotlight2.classList.remove("darkMode");
+        spotlight3.classList.add("lightMode");
+        spotlight3.classList.remove("darkMode");
         weatherSection.style.backgroundColor = 'var(--dark-red)';
         weatherSection.style.borderColor = 'var(--dark-grey)';
         for (let i = 0; i < weatherSectionH4.length; i++) {

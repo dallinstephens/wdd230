@@ -85,10 +85,11 @@
 
     <nav>
         <ul class="navigation">
-            <li><a href="../chamber/">Home</a></li>
+            <li><a href="../chamber/" class="active">Home</a></li>
             <li><a href="../chamber/discover.html">Discover</a></li>
             <li><a href="../chamber/directory.html">Directory</a></li>
             <li><a href="../chamber/join.html">Join</a></li>
+            <li><a href="../chamber/attribution.html">Attribution</a></li>
         </ul>
     </nav>
 
@@ -108,7 +109,7 @@
                 <picture>
                     <source media="(max-width: 639px)" srcset="images/bountiful-city-small.webp">
                     <source media="(max-width: 999px)" srcset="images/bountiful-city-medium.webp">
-                    <img src="images/bountiful-city-large.webp" alt="Individuals meeting">
+                    <img src="images/bountiful-city-large.webp" alt="Bountiful City">
                 </picture>
                 <figcaption>(<a href="www.flickr.com">www.flickr.com</a>, 2009)</figcaption>
             </figure>
@@ -170,33 +171,9 @@
             </figure>
 
             <h2>Member Spotlights</h2>
-            <div class="spotlight">
-                <h3>Community Service Day</h3>
-                <p>
-                    Thank you for all that helped out!<br>
-                    community@serviceday.com<br>
-                    801-111-1111<br>
-                    Website
-                </p>
-            </div>
-            <div class="spotlight">
-                <h3>Networking Groups</h3>
-                <p>
-                    Build networking with like-minded individuals!<br>
-                    build@networking.com<br>
-                    801-222-2222<br>
-                    Website
-                </p>
-            </div>
-            <div class="spotlight">
-                <h3>After School Tutoring</h3>
-                <p>
-                    Thank you volunteering to tutor our children!<br>
-                    education@afterschooltutoring.com<br>
-                    801-333-3333<br>
-                    Website
-                </p>
-            </div>
+            <div id="spotlight1" class="spotlight lightMode"></div>
+            <div id="spotlight2" class="spotlight lightMode"></div>
+            <div id="spotlight3" class="spotlight lightMode"></div>
         </div>
 
         <!-- Section 5 -->
@@ -257,9 +234,10 @@
     </footer>
     <script src="scripts/toggle-menu.js"></script>
     <script src="scripts/get-dates.js"></script>
-    <script src="scripts/toggle-dark-light-mode.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/banner-meet-greet.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/toggle-dark-light-mode.js"></script>
 </body>
 
 </html>
