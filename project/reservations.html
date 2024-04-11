@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservations</title>
+    <meta name="description" content="Scoots Reservations">
+    <meta name="author" content="Dallin Stephens">
+    <!-- References for Social Media Meta: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/social-media-meta.html -->
+    <!-- https://css-tricks.com/essential-meta-tags-social-media/ -->
+    <!-- https://developers.facebook.com/docs/sharing/webmasters#markup -->
+    <meta property="og:title" content="Scoots Reservations">
+    <meta property="og:type" content="website">
+    <!-- Reference for image: -->
+    <!-- Scooter Image Attribution: https://unsplash.com/photos/orange-and-black-motor-scooter-parked-on-pavement-EDY1KzDP0a4 -->
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1554223789-df81106a45ed?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://dallinstephens.github.io/wdd230/project/reservations.html">
+
+    <!-- Reference for CSS Normalize: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/normalize.html -->
+    <!-- https://nicolasgallagher.com/about-normalize-css/ -->
+    <!-- https://github.com/necolas/normalize.css/blob/master/normalize.css -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- References on how to use Google Fonts Api: -->
+    <!-- https://fonts.google.com/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson01/aa-course-homepage-01.html -->
+    <!-- https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reddit+Mono">
+
+    <!-- References for how I created my favicon: -->
+    <!-- https://www.favicon.cc/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/favicon.html -->
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#adding_custom_icons_to_your_site -->
+    <!-- https://www.w3schools.com/html/html_favicon.asp#:~:text=To%20add%20a%20favicon%20to,is%20%22favicon.ico%22. -->
+    <!-- Reference for Color Palette: -->
+    <!-- https://coolors.co/042a2b-5eb1bf-cdedf6-ef7b45-d84727 -->
+    <!-- Dark green: #042A2B -->
+    <!-- Moonstone: #5EB1BF -->
+    <!-- Dark green: #042A2B -->
+    <!-- Light cyan: #CDEDF6 -->
+    <!-- Orange crayola: #EF7B45 -->
+    <!-- Chili red: #D84727 -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/scooter-logo-small.png" alt="Scoots Logo Image">
+        <div>
+            <h1>~Scoots~ Reservations</h1>
+            <!-- Reference for contact information (Bountiful Library): -->
+            <!-- https://library.utah.gov/directory/listing/south-branch-library-bountiful/ -->
+            <p>
+                <!-- Reference for symbols: -->
+                <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+                <span>&#9990; <a href="tel:+1-800-0104-8677">+1-800-0104-8677</a></span><br>
+                <span>&#9993; <a href="mailto:scoots@cozumel.coz">scoots@cozumel.coz</a></span>
+            </p>
+            <!-- Reference for example Cozumel address: -->
+            <!-- https://www.realtor.com/international/mx/25a-av-nte-632-centro-77600-san-miguel-de-cozumel-q-r-mexico-san-miguel-de-cozumel-quintana-roo-120084251065// -->
+            <p>
+                <span>27A Av. nte 777, Centro</span><br>
+                <span>77600 San Miguel de Cozumel</span><br>
+                <span>Quintana Roo, Mexico Cozumel</span>
+            </p>
+        </div>
+    </header>
+
+    <!-- References on how to create hamburger menu: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson03/responsive-menu.html -->
+    <!-- https://codepen.io/blazzard-jason/pen/gmGxaj/ -->
+    <div id="menuHeader">
+        <a id="menu"></a>
+    </div>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="../project/">Home</a></li>
+            <li><a href="../project/rentals.html">Rentals</a></li>
+            <li><a href="../project/reservations.html" class="active">Reservations</a></li>
+            <li><a href="../project/contact.html">Contact</a></li>
+            <li><a href="../project/attribution.html">Attribution</a></li>
+        </ul>
+    </nav>
+
+    <main class="reservations">
+        <h2>Reserve Rental</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name <span class="starRequired">*</span><input type="text" name="fname" id="fname"
+                        required></label>
+                <label>Last Name <span class="starRequired">*</span><input type="text" name="lname" id="lname"
+                        required></label>
+                <label>Phone <span class="starRequired">*</span><input type="tel" name="phone" id="phone"
+                        placeholder="1234441234"></label>
+                <!-- References for pattern for email: -->
+                <!-- https://codepen.io/blazzard-jason/pen/yLrBZZy -->
+                <!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
+                <!-- https://stackoverflow.com/questions/8327705/what-are-and-in-regular-expressions -->
+                <label>Email <span class="starRequired">*</span><input type="email" name="email" id="email"
+                        placeholder="someone@gmail.com" title="Enter a valid email address."
+                        pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" required></label>
+                <label>Home State or Country <span class="starRequired">*</span><input type="text" id="country"
+                        name="Country" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Rental Information</legend>
+                <!-- Reference for input date type: -->
+                <!-- https://www.w3schools.com/tags/att_input_type_date.asp -->
+                <label>Rental Date <span class="starRequired">*</span><input type="date" name="date" id="date"
+                        required></label>
+                <!-- Reference for how to use required on select option dropdown: -->
+                <!-- https://stackoverflow.com/questions/6048710/can-i-apply-the-required-attribute-to-select-fields-in-html -->
+                <label>Rental Type <span class="starRequired">*</span>
+                    <select name="type" id="type" required>
+                        <!-- Down arrow: &#9662 -->
+                        <option value="">Please Select &#9662;</option>
+                        <option value="~Honda Metro Scooter">~Honda Metro Scooter</option>
+                        <option value="~Honda Dio Scooter">~Honda Dio Scooter</option>
+                        <option value="~Honda PCX150 Scooter">~Honda PCX150 Scooter</option>
+                        <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                        <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                        <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                    </select>
+                </label>
+                <!-- Reference for input radio type: -->
+                <!-- https://www.w3schools.com/tags/att_input_type_radio.asp -->
+                <!-- Reference for how to make radio input type required: -->
+                <!-- https://stackoverflow.com/questions/8287779/how-to-use-the-required-attribute-with-a-radio-input-field -->
+                <div>Period <span class="starRequired">*</span></div>
+                <label><input type="radio" name="period" value="Half Day (3 hrs)" id="halfDay" required>Half Day (3
+                    hrs)</label>
+                <label><input type="radio" name="period" value="Full Day" id="fullDay">Full Day</label>
+                <label>Number of Vehicles <input type="number" name="numberInParty" id="numberInParty" required></label>
+                <label>Cruise Line Name (if applicable)<input type="text" id="cruiseLine" name="cruiseLine"></label>
+                <!-- Reference for textarea: -->
+                <!-- https://www.w3schools.com/tags/tag_textarea.asp -->
+                <!-- Reference for textarea width and height: -->
+                <!-- https://stackoverflow.com/questions/3896537/should-i-size-a-textarea-with-css-width-height-or-html-cols-rows-attributes -->
+                <label class="comments" for="comments">Comments/Special Accommodations</label>
+                <textarea name="comments" placeholder="Need and location of a drop-off request?"
+                    id="comments"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Record Rerservation">
+        </form>
+
+        <div class="reference">
+            <figure>
+                <img src="images/scooter-orange-front-side-view.webp" alt="Scooter orange font side view"
+                    loading="lazy">
+            </figure>
+            <cite>(<a href="https://www.pexels.com/">www.pexels.com</a>, 2019)</cite>
+        </div>
+
+        <h2>Rental Services and Agreements</h2>
+        <section>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            <!-- Reference for symbols: -->
+            <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+            <span>&#9990; <a href="tel:+1-800-0104-8677">+1-800-0104-8677</a></span><br>
+            <span>&#9993; <a href="mailto:scoots@cozumel.coz">scoots@cozumel.coz</a></span>
+        </p>
+        <!-- Reference for example Cozumel address: -->
+        <!-- https://www.realtor.com/international/mx/25a-av-nte-632-centro-77600-san-miguel-de-cozumel-q-r-mexico-san-miguel-de-cozumel-quintana-roo-120084251065// -->
+        <p>
+            <span>27A Av. nte 777, Centro</span><br>
+            <span>77600 San Miguel de Cozumel</span><br>
+            <span>Quintana Roo, Mexico Cozumel</span>
+        </p>
+        <p>
+            <!-- Reference on how to create copyright symbol: -->
+            <!-- https://careerkarma.com/blog/html-copyright-symbol/#:~:text=Conclusion,not%20represented%20on%20your%20keyboard. -->
+            &copy;<span id="year"><!-- Copyright Year generated here by JavaScript !--></span><br>
+            Dallin Stephens - Final Project for WDD 230 - Web Frontend Development<br>
+        </p>
+        <p><a href="../project/attribution.html">Attribution Page</a></p>
+        <p id="lastModified"><!-- Last modification date & time generated here by Javascript --></p>
+    </footer>
+    <script src="scripts/toggle-menu.js"></script>
+    <script src="scripts/get-dates.js"></script>
+</body>
+
+</html>

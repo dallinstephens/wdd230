@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scoots</title>
+    <meta name="description" content="Scoots Business. Scoots is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships. Scoots has two physical rental locations on Cozumel. One is near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel and the other is near the Terminal Puerta Maya further south along the coast which caters to the cruise lines and patrons. The company promotes friendly and easy to rent services of motor
+    scooters, jeeps, and side-by-sides ATVs.">
+    <meta name="author" content="Dallin Stephens">
+    <!-- References for Social Media Meta: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/social-media-meta.html -->
+    <!-- https://css-tricks.com/essential-meta-tags-social-media/ -->
+    <!-- https://developers.facebook.com/docs/sharing/webmasters#markup -->
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <!-- Reference for image: -->
+    <!-- Scooter Image Attribution: https://unsplash.com/photos/orange-and-black-motor-scooter-parked-on-pavement-EDY1KzDP0a4 -->
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1554223789-df81106a45ed?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://dallinstephens.github.io/wdd230/project">
+
+    <!-- Reference for CSS Normalize: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/normalize.html -->
+    <!-- https://nicolasgallagher.com/about-normalize-css/ -->
+    <!-- https://github.com/necolas/normalize.css/blob/master/normalize.css -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- References on how to use Google Fonts Api: -->
+    <!-- https://fonts.google.com/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson01/aa-course-homepage-01.html -->
+    <!-- https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reddit+Mono">
+
+    <!-- References for how I created my favicon: -->
+    <!-- https://www.favicon.cc/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/favicon.html -->
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#adding_custom_icons_to_your_site -->
+    <!-- https://www.w3schools.com/html/html_favicon.asp#:~:text=To%20add%20a%20favicon%20to,is%20%22favicon.ico%22. -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Reference for X close icon: -->
+    <!-- https://stackoverflow.com/questions/5353461/unicode-character-for-x-cancel-close -->
+    <div class="todayHighTemperatureContainer">
+        <div class="weatherCity"></div>
+        <span>&nbsp;▶ Today's High Temperature:&nbsp;</span>
+        <span id="todayHighTemperature"></span><span>&deg;F</span>
+        <div id="closeTodayHighTemperatureContainer">&#10006;</div>
+    </div>
+
+    <header>
+        <img src="images/scooter-logo-small.png" alt="Scoots Logo Image">
+        <div>
+            <h1>~Scoots~</h1>
+            <!-- Reference for contact information (Bountiful Library): -->
+            <!-- https://library.utah.gov/directory/listing/south-branch-library-bountiful/ -->
+            <p>
+                <!-- Reference for symbols: -->
+                <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+                <span>&#9990; <a href="tel:+1-800-0104-8677">+1-800-0104-8677</a></span><br>
+                <span>&#9993; <a href="mailto:scoots@cozumel.coz">scoots@cozumel.coz</a></span>
+            </p>
+            <!-- Reference for example Cozumel address: -->
+            <!-- https://www.realtor.com/international/mx/25a-av-nte-632-centro-77600-san-miguel-de-cozumel-q-r-mexico-san-miguel-de-cozumel-quintana-roo-120084251065// -->
+            <p>
+                <span>27A Av. nte 777, Centro</span><br>
+                <span>77600 San Miguel de Cozumel</span><br>
+                <span>Quintana Roo, Mexico Cozumel</span>
+            </p>
+        </div>
+    </header>
+
+    <!-- References on how to create hamburger menu: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson03/responsive-menu.html -->
+    <!-- https://codepen.io/blazzard-jason/pen/gmGxaj/ -->
+    <div id="menuHeader">
+        <a id="menu"></a>
+    </div>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="../project/" class="active">Home</a></li>
+            <li><a href="../project/rentals.html">Rentals</a></li>
+            <li><a href="../project/reservations.html">Reservations</a></li>
+            <li><a href="../project/contact.html">Contact</a></li>
+            <li><a href="../project/attribution.html">Attribution</a></li>
+        </ul>
+    </nav>
+
+    <main class="home">
+        <div class="reference">
+            <figure>
+                <img src="images/scooter-motion.webp" alt="Scooter motion" loading="lazy">
+            </figure>
+            <cite>(<a href="https://www.pexels.com/">www.pexels.com</a>, 2018)</cite>
+        </div>
+        <!-- Reference for content: -->
+        <!-- https://byui-cse.github.io/wdd230-course/lesson14/final-project-scoots.html -->
+        <p>~Scoots~ is a 🛵 motor scooter rental company located on the island of Cozumel off the coast of
+            Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor
+            scooter enthusiasts, and cruise-based touring groups and partnerships.
+        </p>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d478374.1173112467!2d-87.25230153190036!3d20.494015174681785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal%2C%2077675%20Cozumel%2C%20Q.R.%2C%20Mexico!3m2!1d20.4765505!2d-86.9734337!4m5!1s0x8f4e59cceda3d799%3A0xbf8ea7e97451cfd8!2sCentro%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!3m2!1d20.5111971!2d-86.94613609999999!5e0!3m2!1sen!2sus!4v1712529664576!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="mapDescription">
+            ~Scoots~ has two physical rental locations on Cozumel. One is near the Playa del Carmen-Cozumel Ferry dock
+            in el Centro de Cozumel and the other is near the Terminal Puerta Maya further south along the coast which
+            caters to the cruise lines and patrons. The company promotes friendly and easy to rent services of motor
+            scooters, jeeps, and side-by-sides ATVs.
+        </p>
+        <div class="reference">
+            <figure>
+                <img src="images/scooter-white-green-one-seat.webp" alt="Scooter white green one seat" loading="lazy">
+            </figure>
+            <cite>(<a href="https://www.pexels.com/">www.pexels.com</a>, 2017)</cite>
+        </div>
+        <p>
+            ~Scoots~ promotes rental services for customers that like to do their homework before getting to the
+            island and to provide information about the services, requirements, and rental process. ~Scoots~
+            reflects the fun and carefree attitude of the island and the ability to escape the touristy western part of
+            the island by exploring the vast coasts and inlets on the southern and eastern shores.<br><br>
+        </p>
+        <div class="byuIdahoContent">Reference For Scoots Content:<br><br>
+            <span>(</span><a href="https://byui-cse.github.io/wdd230-course/lesson14/final-project-scoots.html"
+                target="_blank">CLICK HERE</a><span>)</span>
+        </div>
+        <!-- Reference for how to get button to act as a link: -->
+        <!-- https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link -->
+        <div><button onclick="location.href='../project/reservations.html'">Make a Rental Reservation</button></div>
+
+        <div class="typesOfRentals">
+            <h2>Types of Rentals</h2>
+            <!-- Reference for nested list: -->
+            <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested -->
+            <h3>Honda Motor Scooters</h3>
+            <ul>
+                <li>Honda Metropolitan (49cc) - 1 person</li>
+                <li>Honda Dio (110cc) - 2 person</li>
+                <li>Honda PCX150 (149cc) - 2 person</li>
+            </ul>
+            <h3>Side-by-Side ATVs</h3>
+            <ul>
+                <li>Honda Pioneer 1000 - 4 person</li>
+            </ul>
+            <h3>Jeeps</h3>
+            <ul>
+                <li>Jeep Wranger - 4 door manuel with A/C - 5 person</li>
+                <li>Jeep Wranger - 2 door - open air - manuel - 4 person</li>
+            </ul>
+        </div>
+        <!-- Weather -->
+        <div class="weather">
+            <h2>Weather</h2>
+            <div class="weatherCity"></div>
+            <div class="today">
+                <h3>Today Current Conditions</h3>
+                <div id="currentWeatherTitle"></div>
+                <div class="currentWeatherIconContainer"><img id="currentWeatherIcon" src="#"
+                        alt="Current weather description placeholder">
+                </div>
+                <div class="currentTemperatureContainer"><span id="currentTemperature"></span><span>&deg;F</span>
+                </div>
+                <div id="currentWeatherDescription"></div>
+                <div class="currentHumidityContainer">Humidity:&nbsp;<span id="currentHumidity"></span><span>%</span>
+                </div>
+            </div>
+            <div class="tomorrow">
+                <h3>Tomorrow 3:00 PM</h3>
+                <div id="tomorrowWeatherTitle"></div>
+                <div class="tomorrowWeatherIconContainer"><img id="tomorrowWeatherIcon" src="#"
+                        alt="Tomorrow weather description placeholder">
+                </div>
+                <div class="tomorrowTemperatureContainer"><span
+                        id="tomorrowTemperature"></span><span>&deg;F&nbsp;</span>
+                </div>
+                <div id="tomorrowWeatherDescription"></div>
+                <div class="tomorrowHumidityContainer">Humidity:&nbsp;<span id="tomorrowHumidity"></span><span>%</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            <!-- Reference for symbols: -->
+            <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+            <span>&#9990; <a href="tel:+1-800-0104-8677">+1-800-0104-8677</a></span><br>
+            <span>&#9993; <a href="mailto:scoots@cozumel.coz">scoots@cozumel.coz</a></span>
+        </p>
+        <!-- Reference for example Cozumel address: -->
+        <!-- https://www.realtor.com/international/mx/25a-av-nte-632-centro-77600-san-miguel-de-cozumel-q-r-mexico-san-miguel-de-cozumel-quintana-roo-120084251065// -->
+        <p>
+            <span>27A Av. nte 777, Centro</span><br>
+            <span>77600 San Miguel de Cozumel</span><br>
+            <span>Quintana Roo, Mexico Cozumel</span>
+        </p>
+        <p>
+            <!-- Reference on how to create copyright symbol: -->
+            <!-- https://careerkarma.com/blog/html-copyright-symbol/#:~:text=Conclusion,not%20represented%20on%20your%20keyboard. -->
+            &copy;<span id="year"><!-- Copyright Year generated here by JavaScript !--></span><br>
+            Dallin Stephens - Final Project for WDD 230 - Web Frontend Development<br>
+        </p>
+        <p><a href="../project/attribution.html">Attribution Page</a></p>
+        <p id="lastModified"><!-- Last modification date & time generated here by Javascript --></p>
+    </footer>
+    <script src="scripts/high-temperature-message.js"></script>
+    <script src="scripts/toggle-menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/get-dates.js"></script>
+</body>
+
+</html>

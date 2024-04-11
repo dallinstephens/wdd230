@@ -1,0 +1,24 @@
+@media (min-width: 1000px) {
+    html {
+        margin: 0 200px;
+        background-color: var(--light-grey);
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    /* Rental Page */
+    main.rentals div.reference {
+        width: 60%;
+        margin: 0 20%;
+        height: auto;
+    }
+
+    main.rentals table {
+        width: 70%;
+        margin: 0 15%;
+        height: auto;
+    }
+
+}

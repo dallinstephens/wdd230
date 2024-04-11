@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <meta name="description" content="Scoots Contact Information">
+    <meta name="author" content="Dallin Stephens">
+    <!-- References for Social Media Meta: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/social-media-meta.html -->
+    <!-- https://css-tricks.com/essential-meta-tags-social-media/ -->
+    <!-- https://developers.facebook.com/docs/sharing/webmasters#markup -->
+    <meta property="og:title" content="Scoots Contact Information">
+    <meta property="og:type" content="website">
+    <!-- Reference for image: -->
+    <!-- Scooter Image Attribution: https://unsplash.com/photos/orange-and-black-motor-scooter-parked-on-pavement-EDY1KzDP0a4 -->
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1554223789-df81106a45ed?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://dallinstephens.github.io/wdd230/project/contact.html">
+
+    <!-- Reference for CSS Normalize: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/normalize.html -->
+    <!-- https://nicolasgallagher.com/about-normalize-css/ -->
+    <!-- https://github.com/necolas/normalize.css/blob/master/normalize.css -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- References on how to use Google Fonts Api: -->
+    <!-- https://fonts.google.com/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson01/aa-course-homepage-01.html -->
+    <!-- https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reddit+Mono">
+
+    <!-- References for how I created my favicon: -->
+    <!-- https://www.favicon.cc/ -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson02/favicon.html -->
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#adding_custom_icons_to_your_site -->
+    <!-- https://www.w3schools.com/html/html_favicon.asp#:~:text=To%20add%20a%20favicon%20to,is%20%22favicon.ico%22. -->
+    <!-- Reference for Color Palette: -->
+    <!-- https://coolors.co/042a2b-5eb1bf-cdedf6-ef7b45-d84727 -->
+    <!-- Dark green: #042A2B -->
+    <!-- Moonstone: #5EB1BF -->
+    <!-- Dark green: #042A2B -->
+    <!-- Light cyan: #CDEDF6 -->
+    <!-- Orange crayola: #EF7B45 -->
+    <!-- Chili red: #D84727 -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/scooter-logo-small.png" alt="Scoots Logo Image">
+        <div>
+            <h1>~Scoots~ Contact Information</h1>
+            <!-- Reference for contact information (Bountiful Library): -->
+            <!-- https://library.utah.gov/directory/listing/south-branch-library-bountiful/ -->
+            <p>
+                <!-- Reference for symbols: -->
+                <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+                <span>&#9990; <a href="tel:+1-800-0104-8677">+1-800-0104-8677</a></span><br>
+                <span>&#9993; <a href="mailto:scoots@cozumel.coz">scoots@cozumel.coz</a></span>
+            </p>
+            <!-- Reference for example Cozumel address: -->
+            <!-- https://www.realtor.com/international/mx/25a-av-nte-632-centro-77600-san-miguel-de-cozumel-q-r-mexico-san-miguel-de-cozumel-quintana-roo-120084251065// -->
+            <p>
+                <span>27A Av. nte 777, Centro</span><br>
+                <span>77600 San Miguel de Cozumel</span><br>
+                <span>Quintana Roo, Mexico Cozumel</span>
+            </p>
+        </div>
+    </header>
+
+    <!-- References on how to create hamburger menu: -->
+    <!-- https://byui-cse.github.io/wdd230-course/lesson03/responsive-menu.html -->
+    <!-- https://codepen.io/blazzard-jason/pen/gmGxaj/ -->
+    <div id="menuHeader">
+        <a id="menu"></a>
+    </div>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="../project/">Home</a></li>
+            <li><a href="../project/rentals.html">Rentals</a></li>
+            <li><a href="../project/reservations.html">Reservations</a></li>
+            <li><a href="../project/contact.html" class="active">Contact</a></li>
+            <li><a href="../project/attribution.html">Attribution</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact">
+        <h2>Reserve Rental</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label>Name <span class="starRequired">*</span><input type="text" name="name" id="name"
+                        required></label>
+                <!-- References for pattern for email: -->
+                <!-- https://codepen.io/blazzard-jason/pen/yLrBZZy -->
+                <!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
+                <!-- https://stackoverflow.com/questions/8327705/what-are-and-in-regular-expressions -->
+                <label>Email <span class="starRequired">*</span><input type="email" name="contactPageEmail"
+                        id="contactPageEmail" placeholder="someone@gmail.com" title="Enter a valid email address."
+                        pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" required></label>
+                <!-- Reference for textarea: -->
+                <!-- https://www.w3schools.com/tags/tag_textarea.asp -->
+                <!-- Reference for textarea width and height: -->
+                <!-- https://stackoverflow.com/questions/3896537/should-i-size-a-textarea-with-css-width-height-or-html-cols-rows-attributes -->
+                <label class="comment" for="comment">Comment</label>
+                <textarea name="comment" id="comment" required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Record Contact Us Request">
+        </form>
+
+        <div class="reference">
+            <figure>
+                <img src="images/scooter-white-black-front-view.webp" alt="Scooter white black front view"
+                    loading="lazy">
+            </figure>
+            <cite>(<a href="https://www.pexels.com/">www.pexels.com</a>, 2022)</cite>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d14949.426365944324!2d-86.96717196006895!3d20.491603230280138!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal%2C%2077675%20Cozumel%2C%20Q.R.%2C%20Mexico!3m2!1d20.4765505!2d-86.9734337!4m5!1s0x8f4e59cceda3d799%3A0xbf8ea7e97451cfd8!2sCentro%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!3m2!1d20.5111971!2d-86.94613609999999!5e0!3m2!1sen!2sus!4v1712444357514!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
+    <footer>
+        <p>
+            <!-- Reference for symbols: -->
+            <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+            <span>&#9990; <a href="tel:+1-800-0104-8677">+1-800-0104-8677</a></span><br>
+            <span>&#9993; <a href="mailto:scoots@cozumel.coz">scoots@cozumel.coz</a></span>
+        </p>
+        <!-- Reference for example Cozumel address: -->
+        <!-- https://www.realtor.com/international/mx/25a-av-nte-632-centro-77600-san-miguel-de-cozumel-q-r-mexico-san-miguel-de-cozumel-quintana-roo-120084251065// -->
+        <p>
+            <span>27A Av. nte 777, Centro</span><br>
+            <span>77600 San Miguel de Cozumel</span><br>
+            <span>Quintana Roo, Mexico Cozumel</span>
+        </p>
+        <p>
+            <!-- Reference on how to create copyright symbol: -->
+            <!-- https://careerkarma.com/blog/html-copyright-symbol/#:~:text=Conclusion,not%20represented%20on%20your%20keyboard. -->
+            &copy;<span id="year"><!-- Copyright Year generated here by JavaScript !--></span><br>
+            Dallin Stephens - Final Project for WDD 230 - Web Frontend Development<br>
+        </p>
+        <p><a href="../project/attribution.html">Attribution Page</a></p>
+        <p id="lastModified"><!-- Last modification date & time generated here by Javascript --></p>
+    </footer>
+    <script src="scripts/toggle-menu.js"></script>
+    <script src="scripts/get-dates.js"></script>
+</body>
+
+</html>

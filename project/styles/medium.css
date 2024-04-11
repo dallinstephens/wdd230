@@ -1,0 +1,105 @@
+@media (min-width: 640px) {
+
+    /* Reference for display flex: */
+    /* https://stackoverflow.com/questions/40120733/how-do-i-put-two-elements-in-the-same-row-with-flexbox */
+    div.todayHighTemperatureContainer {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    div#closeTodayHighTemperatureContainer {
+        position: absolute;
+        font-size: 30px;
+        /* line-height used to vertically position "X" */
+        line-height: 15px;
+        right: 10px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    header img {
+        grid-column: 1 / 2;
+    }
+
+    /* Reference for flex: */
+    /* https://stackoverflow.com/questions/59482389/difference-between-flex-0-0-100-and-flex-1-1-100 */
+    header>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        grid-column: 2 / 3;
+    }
+
+    /* Reference for how to get all child elements with *: */
+    /* https://www.geeksforgeeks.org/how-to-select-all-child-elements-recursively-using-css/ */
+    header>div>* {
+        flex: auto;
+    }
+
+    #menuHeader {
+        height: 20px;
+    }
+
+    #menuHeader a#menu {
+        display: none;
+    }
+
+    nav ul.navigation li {
+        display: block;
+        border: 10px solid var(--dark-grey);
+    }
+
+    /* References for using flex for horizontal navigation bar: */
+    /* https://video.byui.edu/media/t/1_b7w4k0v0 */
+    /* https://codepen.io/blazzard-jason/pen/LYgYQEb */
+    /* https://byui-cse.github.io/wdd230-course/lesson02/aa-course-homepage-02.html */
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .reference {
+        width: 50%;
+        height: auto;
+        float: right;
+        padding: 0 20px;
+    }
+
+    .map {
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    .reference cite {
+        position: absolute;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    main p {
+        padding-top: 10px;
+    }
+
+    /* Rental Page */
+    main.rentals div.reference {
+        width: 80%;
+        margin: 0 10%;
+        height: auto;
+    }
+
+    main.rentals h2 {
+        background-color: var(--white);
+    }
+}
